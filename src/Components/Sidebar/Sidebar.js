@@ -20,11 +20,9 @@ export const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarMenu>
                     <SidebarLink to='town' onClick={toggle}>Town</SidebarLink>
                     <SidebarLink to='menu' onClick={toggle}>Menu</SidebarLink>
-                    <SidebarLink to='about' onClick={toggle}>About Us</SidebarLink>
-                    <SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>
+                    <SidebarRoute to='/signup'>Sign Up</SidebarRoute>
                 </SideBtnWrap>                
             </SidebarWrapper>
         </SidebarBox>

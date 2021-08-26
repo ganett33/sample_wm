@@ -24,20 +24,14 @@ const Navbar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='/town' onClick={toggle}>Town</NavLinks>
+                        <NavLinks to='/town' >Town</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/menu' onClick={toggle}>Menu</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks to='/about' onClick={toggle}>About Us</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks to='/signup' onClick={toggle}>Sign Up</NavLinks>
+                        <NavLinks to='/menu' >Menu</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                    <NavBtnLink to='/signup'>Sign Up</NavBtnLink>
                 </NavBtn>                
             </NavbarBox>
         </Nav>

@@ -48,7 +48,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        color: #000000;
+        color: var(--clr-accent);
         display: block;
         position: absolute;
         top: 0;
@@ -59,7 +59,7 @@ export const MobileIcon = styled.div`
     }
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #f73859;
+        color: #000;
 `;
 
 export const NavMenu = styled.ul`
