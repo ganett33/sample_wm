@@ -4,9 +4,10 @@ import {Link as LinkScroll } from 'react-scroll';
 import '../components.css';
 
 export const Nav = styled.nav`
+    background:${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     font-family: var(--ff-primary);
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +33,7 @@ export const NavbarBox = styled.div`
  
 export const NavLogo = styled(LinkRouter)`
     font-weight: var(--fw-bold);
-    color: #000000;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 2rem;
@@ -41,6 +42,10 @@ export const NavLogo = styled(LinkRouter)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: var(--clr-accent);
 `;
 
 
@@ -48,7 +53,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        color: var(--clr-accent);
+        color: #fff;
         display: block;
         position: absolute;
         top: 0;
@@ -59,7 +64,7 @@ export const MobileIcon = styled.div`
     }
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #000;
+        color: var(--clr-accent);
 `;
 
 export const NavMenu = styled.ul`

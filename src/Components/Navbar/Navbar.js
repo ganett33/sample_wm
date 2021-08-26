@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll} from 'react-scroll';
 import { 
     Nav, 
     NavbarBox, 
@@ -14,27 +16,48 @@ import {
 
 
 const Navbar = ({ toggle }) => {
+    const [scrollNav, setScrolNav] = useState(false)
+
+    const changeNav =  () => {
+        if(window.scrollY >=80) {
+            setScrolNav(true)
+        }else {
+            setScrolNav(false)
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
     <>
-        <Nav>
+    <IconContext.Provider value={{color: 'red'}}>
+        <Nav scrollNav={scrollNav}>
             <NavbarBox>
-                <NavLogo to='/'>Word A'Mouth</NavLogo>
+                <NavLogo to='/' onClick={toggleHome}>Word A'Mouth</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='/town' >Town</NavLinks>
+                        <NavLinks to='/town'>Town</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/menu' >Menu</NavLinks>
+                        <NavLinks to='/menu'>Menu</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to='/sign-in'>Sign In</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/signup'>Sign Up</NavBtnLink>
+                    <NavBtnLink to='/sign-up'>Sign Up</NavBtnLink>
                 </NavBtn>                
             </NavbarBox>
         </Nav>
+        </IconContext.Provider>
     </>
     );
 };

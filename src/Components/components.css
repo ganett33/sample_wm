@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Roboto:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 
 :root {
     --ff-primary: 'Nunito', sans-serif;
     --ff-secondary: 'Roboto', sans-serif;
+    --ff-italic: 'Sansita', sans-serif;
+    --ff-bilbo: 'Bilbo Swash Caps', cursive;
 
     --fw-reg: 300;
     --fw-bold: 900;
