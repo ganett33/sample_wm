@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+// import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll} from 'react-scroll';
 import { 
     Nav, 
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
     }
     return (
     <>
-    <IconContext.Provider value={{color: 'red'}}>
+    {/* <IconContext.Provider value={{color: 'white'}}> */}
         <Nav scrollNav={scrollNav}>
             <NavbarBox>
                 <NavLogo to='/' onClick={toggleHome}>Word A'Mouth</NavLogo>
@@ -50,14 +50,14 @@ const Navbar = ({ toggle }) => {
                     </NavItem>
                     <NavItem>
                         <NavLinks to='/sign-in'>Sign In</NavLinks>
-                    </NavItem>
+                    </NavItem> 
                 </NavMenu>
                 <NavBtn>
                     <NavBtnLink to='/sign-up'>Sign Up</NavBtnLink>
                 </NavBtn>                
             </NavbarBox>
         </Nav>
-        </IconContext.Provider>
+        {/* </IconContext.Provider> */}
     </>
     );
 };

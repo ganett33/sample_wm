@@ -42,10 +42,12 @@ export const NavLogo = styled(LinkRouter)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-
+    
     &:hover {
-        transition: all 0.2s ease-in-out;
+        transform: rotate(8deg);
         color: var(--clr-accent);
+    }
+
 `;
 
 
@@ -53,23 +55,28 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        color: #fff;
         display: block;
         position: absolute;
+        color: #fff;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        cursor: pointer;        
+        cursor: pointer;
+        
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            color: var(--clr-accent);
+        }
     }
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        color: var(--clr-accent);
+
+
 `;
 
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
+    color: #fff;
     list-style: none;
     text-align: center;
     margin-right: -22px;
@@ -84,7 +91,7 @@ export const NavItem = styled.li`
     border-radius: 10px;
     white-space: nowrap;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -93,21 +100,24 @@ export const NavItem = styled.li`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #f73859;
-        color: #ffffff;
+        background: #fff;
+        color: #f73859;
+    }
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(LinkRouter)`
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    text-decoration: none;
 
-    /*Border action*/
-    &.active {
-        border: 3px solid #F89E95;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #f73859;
     }
 `;
 
@@ -125,8 +135,8 @@ export const NavBtnLink = styled(LinkRouter)`
     border-radius: 10px;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #000000;
-    font-size: 16px;
+    color: #f73859;
+    font-size: 18px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -136,7 +146,7 @@ export const NavBtnLink = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #f73859;
-        color: #ffffff;
+        color: #000;
     }
 
 `;
