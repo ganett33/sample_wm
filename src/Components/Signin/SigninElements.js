@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 import '../components.css';
 
 export const Box = styled.div`
@@ -11,7 +12,7 @@ export const Box = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: white;
+    background: #1112;
 `;
 
 export const FormWrap = styled.div`
@@ -25,17 +26,26 @@ export const FormWrap = styled.div`
     }
 `;
 
-export const Icon = styled(Link)`
+export const Icon = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 32px 32px 32px 32px;
+    
+    @media screen and (max-width: 400px) {
+        margin-left: 16px 8px 16px 8px;
+        marign-top: 8px;
+    }
+`;
+
+export const IconContent = styled(Link)`
     font-family: var(--ff-primary);
-    margin-left: 32px;
-    margin-top: 32px;
     text-decoration: none;
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     font-size: 38px;
-    
+
     @media screen and (max-width: 400px) {
-        margin-left: 16px;
+        margin-left: 16px 8px 16px 8px;
         marign-top: 8px;
     }
 `;

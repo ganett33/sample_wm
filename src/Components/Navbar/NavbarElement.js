@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 import '../components.css';
 
 export const Nav = styled.nav`
-    background:${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background:${({scrollNav}) => (scrollNav ? '#000' : '#1112')};
     font-family: var(--ff-primary);
     height: 80px;
     margin-top: -80px;
@@ -117,6 +117,9 @@ export const NavLinks = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         color: #f73859;
+    }
+    &.active {
+        border-bottom: 3px solid #000;
     }
 `;
 

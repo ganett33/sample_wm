@@ -20,6 +20,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarMenu>
                     <SidebarLink to='/town' onClick={toggle}>Town</SidebarLink>
                     <SidebarLink to='/menu' onClick={toggle}>Menu</SidebarLink>
+                    <SidebarLink to='/sign-in' onClick={toggle}>New Place</SidebarLink>
                     <SidebarLink to='/sign-in' onClick={toggle}>Sign In</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
