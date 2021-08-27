@@ -16,7 +16,7 @@ function App() {
     };
 
     return (
-        <Router>s
+        <Router>
             <ScrollToTop />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar />
