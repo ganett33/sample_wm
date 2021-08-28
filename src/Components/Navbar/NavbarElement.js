@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import '../components.css';
+import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background:${({scrollNav}) => (scrollNav ? '#000' : '#1112')};
@@ -13,7 +14,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 800;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -46,11 +47,9 @@ export const NavLogo = styled(LinkRouter)`
         transform: rotate(8deg);
         color: var(--clr-accent);
     }
-
 `;
 
-
-export const MobileIcon = styled.div`
+export const MobileIcon = styled(FaBars)`
     display: none;
 
     @media screen and (max-width: 768px) {
@@ -68,8 +67,6 @@ export const MobileIcon = styled.div`
             color: var(--clr-accent);
         }
     }
-
-
 `;
 
 export const NavMenu = styled.ul`
@@ -84,7 +81,6 @@ export const NavMenu = styled.ul`
         display: none;
     }
 `;
-
 
 export const NavItem = styled.li`
     border-radius: 10px;
