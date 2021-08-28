@@ -1,7 +1,19 @@
 import React from 'react';
-import { Box, Form, FormBtn, FormContent, FormH1, FormLabel, FormWrap, FormInput, Icon, IconContent, CloseIcon, Text } from './SigninElements';
+import { 
+    Box,
+    Form, 
+    FormBtn, 
+    FormContent, 
+    FormH1, 
+    FormLabel, 
+    FormWrap, 
+    FormInput, 
+    Icon, 
+    IconContent, 
+    Text
+ } from './SigninElements';
 
-const Signinform = ({ }) => {
+const Signinform = () => {
     return (
         <>
          <Box>
