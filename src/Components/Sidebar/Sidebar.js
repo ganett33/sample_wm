@@ -18,7 +18,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='/' exact onClick={toggle}>Home</SidebarLink>
+                    <SidebarLink to='/' onClick={toggle}>Home</SidebarLink>
                     <SidebarLink to='/town' onClick={toggle}>Town</SidebarLink>
                     <SidebarLink to='/menu' onClick={toggle}>Menu</SidebarLink>
                     <SidebarLink to='/new' onClick={toggle}>New Place</SidebarLink>
