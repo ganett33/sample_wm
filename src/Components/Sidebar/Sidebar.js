@@ -18,13 +18,13 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
+                    <SidebarLink to='/' exact onClick={toggle}>Home</SidebarLink>
                     <SidebarLink to='/town' onClick={toggle}>Town</SidebarLink>
                     <SidebarLink to='/menu' onClick={toggle}>Menu</SidebarLink>
-                    <SidebarLink to='/sign-in' onClick={toggle}>New Place</SidebarLink>
-                    <SidebarLink to='/sign-in' onClick={toggle}>Sign In</SidebarLink>
+                    <SidebarLink to='/new' onClick={toggle}>New Place</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/sign-up'>Sign Up</SidebarRoute>
+                    <SidebarRoute to='/sign-in'>Sign In</SidebarRoute>
                 </SideBtnWrap>                
             </SidebarWrapper>
         </SidebarBox>

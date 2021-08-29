@@ -49,12 +49,9 @@ const Navbar = ({ toggle }) => {
                     <NavItem>
                     <NavLinks to='/new'>New Place</NavLinks>
                     </NavItem>
-                    <NavItem>
-                        <NavLinks to='/sign-in'>Sign In</NavLinks>
-                    </NavItem> 
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/sign-up'>Sign Up</NavBtnLink>
+                    <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
                 </NavBtn>                
             </NavbarBox>
         </Nav>
