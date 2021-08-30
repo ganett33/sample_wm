@@ -62,7 +62,6 @@ const Signinform = () => {
       const data = await authService.signInWithPopup(provider);
       console.log(data);
     };
-
     return (
         <>
          <Box>
@@ -97,8 +96,6 @@ const Signinform = () => {
                           {newAccount ? "Sign In" : "Create Account"}
                         </FormH4>
                         <FormInputBtn type="submit" value={newAccount ? "Create Account" : "Sign In"} />
-
-
                         <br />
                         <FormBtn onClick={onSocialClick} name="google">Continue with <FaGoogle /></FormBtn>
                         <FormBtn onClick={onSocialClick} name="github">Continue with <FaGithub /></FormBtn>
