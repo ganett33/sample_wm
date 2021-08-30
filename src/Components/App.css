@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Roboto:wght@100;400;500&display=swap');
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* background-color: var(--clr-main_bg); */
-  }
-
-
 :root {
     --ff-primary: 'Nunito', sans-serif;
     --ff-secondary: 'Roboto', sans-serif;
@@ -16,4 +7,12 @@
     --clr-font2: #ffffff;
     --clr-accent: #f73859;
 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--clr-font2)
+  /* background-color: var(--clr-main_bg); */
 }

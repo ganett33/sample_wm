@@ -11,7 +11,7 @@ export const Box = styled.div`
     top: 0;
     z-index: 0;
     overflow: hidden;
-    background: #1112;
+    background: var(--clr-font2);
 `;
 
 export const FormWrap = styled.div`
@@ -61,7 +61,7 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-    background: #f1d18a;
+    background: var(--clr-font1);
     max-width: 400px;
     height: auto;
     width: 100%;
@@ -87,7 +87,7 @@ export const FormH1 = styled.h1`
 `;
 export const FormH4 = styled.span`
      margin: 10px;
-     color: white;
+     color: var(--clr-font2);
      font-size: 18px;
      font-family: var(--ff-primary);
      text-align: center;
@@ -101,7 +101,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
      padding: 16px 16px;
-     margin-bottom: 32px;
+     margin-bottom: 30px;
      border: none;
      border-radius: 4px;
 `;
@@ -128,10 +128,15 @@ export const FormBtn = styled.button`
      cursor: pointer;
 `;
 
-export const Text = styled.span`
-     text-align: center;
-     margin-top: 24px;
+export const Text1 = styled.span`
+     text-align: left;
+     margin-top: -20px;
      color: #fff;
+     font-size: 14px;
+`;
+export const Text2 = styled.span`
+     text-align: left;
+     color: var(--clr-accent);
      font-size: 14px;
 `;
 

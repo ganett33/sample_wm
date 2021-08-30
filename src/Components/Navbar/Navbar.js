@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { animateScroll as scroll} from 'react-scroll';
+import { authService } from '../../fbase';
 import { 
     Nav, 
     NavbarBox, 
@@ -13,7 +14,7 @@ import {
     NavBtnLink
  } from './NavbarElement';
 
-
+const onLogOutClick = () => authService.signOut();    
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrolNav] = useState(false)
 
@@ -51,7 +52,7 @@ const Navbar = ({ toggle }) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
+                    <NavBtnLink onClick={onLogOutClick}>Log Out</NavBtnLink>
                 </NavBtn>                
             </NavbarBox>
         </Nav>

@@ -15,7 +15,8 @@ import {
     FormInput, 
     Icon, 
     IconContent, 
-    Text
+    Text1,
+    Text2
  } from './SigninElements';
 
 const Signinform = () => {
@@ -90,12 +91,14 @@ const Signinform = () => {
                          value={password}
                          onChange={onChange}
                         />
+                        <Text1>Forgot password</Text1>
+                        <Text2>{error}</Text2>
                         <FormH4 onClick={toggleAccount}>
                           {newAccount ? "Sign In" : "Create Account"}
                         </FormH4>
                         <FormInputBtn type="submit" value={newAccount ? "Create Account" : "Sign In"} />
-                        {error}
-                        <Text>Forgot password</Text>
+
+
                         <br />
                         <FormBtn onClick={onSocialClick} name="google">Continue with <FaGoogle /></FormBtn>
                         <FormBtn onClick={onSocialClick} name="github">Continue with <FaGithub /></FormBtn>

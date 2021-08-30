@@ -9,7 +9,9 @@ import {
     SidebarRoute, 
     SidebarWrapper
   } from './SidebarElements';
+import { authService } from '../../fbase';
 
+  const onLogOutClick = () => authService.signOut();      
 export const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarBox isOpen={isOpen} onClick={toggle}>
@@ -24,7 +26,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='/new' onClick={toggle}>New Place</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/sign-in'>Sign In</SidebarRoute>
+                    <SidebarRoute onClick={onLogOutClick}>Log Out</SidebarRoute>
                 </SideBtnWrap>                
             </SidebarWrapper>
         </SidebarBox>
