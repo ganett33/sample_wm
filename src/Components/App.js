@@ -1,30 +1,25 @@
-import React, { useState } from "react";
-import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import ScrollToTop from 'components/ScrollToTop';
-import Home from '../routes/home';
-import SignIn from '../routes/signin';
+import React, { useState, useEffect } from "react";
 import AppRouter from "../components/Router";
-import { authService } from "fbase";
-
+import { authService } from "../fbase";
 
 function App() {
-    const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
+    const [init, setInit] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    useEffect(() => {
+      authService.onAuthStateChanged((user) => {
+        if (user) {
+          setIsLoggedIn(true);
+        } else {
+          setIsLoggedIn(false);
+        }
+        setInit(true);
+      });
+    }, []);
     return (
-        <>
-            <AppRouter isLoggedIn={isLoggedIn} />
-            <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
-        </>
-        // <Router>
-        //     <ScrollToTop />
-        //     <Switch>
-        //         <Route path='/' exact component={Home} />
-        //         <Route path='/sign-in' component={SignIn} />
-        //     </Switch>
-        // </Router>
+      <>
+      {init ? <AppRouter isLoggedIn={isLoggedIn} /> : "Initializing..."}
+      </>
     );
-}
-
-export default App;
-
-
+  }
+  
+  export default App;
