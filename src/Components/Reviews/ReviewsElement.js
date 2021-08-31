@@ -76,12 +76,14 @@ export const ReviewH1 = styled.h1`
 `;
 
 export const ReviewH2 = styled.h2`
+color: var(--clr-font1);
     font-size: 1rem;
     margin-bottom: 10px;
 
 `;
 
 export const ReviewP = styled.p`
+    color: var(--clr-font1);
     font-size: 1rem;
     text-align: center;
 `;

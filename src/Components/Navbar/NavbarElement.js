@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import '../components.css';
 import { FaBars } from 'react-icons/fa';
+import {Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background:${({scrollNav}) => (scrollNav ? '#000' : '#1112')};
@@ -100,7 +101,26 @@ export const NavItem = styled.li`
     }
 `;
 
-export const NavLinks = styled(LinkRouter)`
+export const NavLink1 = styled(LinkRouter)`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #f73859;
+    }
+    &.active {
+        border-bottom: 3px solid #000;
+    }
+`;
+
+export const NavLink2 = styled(LinkScroll)`
     color: #fff;
     display: flex;
     align-items: center;

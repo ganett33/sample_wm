@@ -9,7 +9,8 @@ import {
     MobileIcon, 
     NavMenu, 
     NavItem,
-    NavLinks,
+    NavLink1,
+    NavLink2,
     NavBtn,
     NavBtnLink
  } from './NavbarElement';
@@ -42,13 +43,10 @@ const Navbar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='/town'>Town</NavLinks>
+                        <NavLink1 to='/places'>Places</NavLink1>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/menu'>Menu</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                    <NavLinks to='/new'>New Place</NavLinks>
+                        <NavLink2 to='/new'>New Place</NavLink2>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>

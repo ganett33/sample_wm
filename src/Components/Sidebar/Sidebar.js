@@ -21,8 +21,7 @@ export const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to='/' onClick={toggle}>Home</SidebarLink>
-                    <SidebarLink to='/town' onClick={toggle}>Town</SidebarLink>
-                    <SidebarLink to='/menu' onClick={toggle}>Menu</SidebarLink>
+                    <SidebarLink to='/places' onClick={toggle}>Places</SidebarLink>
                     <SidebarLink to='/new' onClick={toggle}>New Place</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
