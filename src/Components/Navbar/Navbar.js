@@ -42,14 +42,11 @@ const Navbar = ({ toggle }) => {
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
-                <NavItem>
+                    <NavItem>
                         <NavLink1 to='/'>Home</NavLink1>
                     </NavItem>
                     <NavItem>
                         <NavLink1 to='/places'>Places</NavLink1>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink2 to='/new-place'>New Place</NavLink2>
                     </NavItem>
                     <NavItem>
                         <NavLink2 onClick={toggleFooter}>Subscribe</NavLink2>

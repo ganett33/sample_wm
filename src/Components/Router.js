@@ -4,16 +4,10 @@ import Home from "../routes/Home";
 import Places from "../routes/Places";
 import Place from "../routes/Place";
 import Signin from "../routes/Signin";
-import { ImageSlider } from './ImageSlider/ImageElement';
-import { animateScroll as scroll} from 'react-scroll';
-import Footer from './Footer/Footer';
+import ImageSlider from './ImageSlider/ImageSlider';
 
 
 const AppRouter = ({ isLoggedIn }) => {
-  const toggleSubscribe = () => {
-    scroll.scrollToBottom();
-  }
-
   return (
     <Router>
       <Switch>
@@ -22,8 +16,6 @@ const AppRouter = ({ isLoggedIn }) => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path='/new-place' exact component={ImageSlider} />
-            <Route path='subscribe' onclick={toggleSubscribe} component={Footer} />
             <Route path='/places' exact component={Places} />
             <Route path='/place' exact component={Place} />
           </>
