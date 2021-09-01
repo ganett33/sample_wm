@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Navbar from '../components/Navbar/Navbar';
-import PlacesContent from '../components/Places/PlacesContent';
+import Place from '../components/Place/PlaceContent';
 import Footer from '../components/Footer/Footer';
-import HeroSection from '../components/HeroSection/HeroSection';
+import { SliderData } from '../components/ImageSlider/SliderData';
+import ImageSlider from '../components/ImageSlider/ImageSlider';
 
 
 const Places = () => {
@@ -16,8 +17,8 @@ const Places = () => {
         <>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar  toggle={toggle}/>
-        <HeroSection/>
-        <PlacesContent />
+        <ImageSlider slides={SliderData}/>
+        <Place />
         <Footer />
       </>
     )

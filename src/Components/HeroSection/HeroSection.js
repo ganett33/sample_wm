@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Video from '../../videos/video.mp4';
-import {Btn} from '../ButtonElement';
+
 import { 
     HeroBox, 
     HeroBg, 
@@ -10,7 +10,8 @@ import {
     HeroP, 
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight
+    ArrowRight,
+    HeroBtn
  } from './HeroElements';
 
 export const HeroSection = () => {
@@ -31,13 +32,15 @@ export const HeroSection = () => {
                     Hidden places in Mt. Maunganui this week.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Btn to="sign-up" onMouseEnter={onHover}
+                    <HeroBtn  
+                    to='/place'
+                    onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
                     dark="true"
                     >
                         Look First {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Btn>
+                    </HeroBtn>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroBox>

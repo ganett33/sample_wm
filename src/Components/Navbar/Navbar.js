@@ -30,23 +30,29 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
+    const toggleHome = () => {scroll.scrollToTop();}
+    const toggleFooter = () => {scroll.scrollToBottom();}
+
     return (
     <>
         <Nav scrollNav={scrollNav}>
             <NavbarBox>
-                <NavLogo to='/' onClick={toggleHome}>Word A'Mouth</NavLogo>
+                <NavLogo onClick={toggleHome}>Word A'Mouth</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
+                <NavItem>
+                        <NavLink1 to='/'>Home</NavLink1>
+                    </NavItem>
                     <NavItem>
                         <NavLink1 to='/places'>Places</NavLink1>
                     </NavItem>
                     <NavItem>
-                        <NavLink2 to='/new'>New Place</NavLink2>
+                        <NavLink2 to='/new-place'>New Place</NavLink2>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink2 onClick={toggleFooter}>Subscribe</NavLink2>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
