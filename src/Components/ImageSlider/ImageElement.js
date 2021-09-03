@@ -75,7 +75,7 @@ export const ImageContent = styled.div`
     color: #fff;
 
     h1 {
-        font-size: clamp(3rem, 6vw, 2.5rem);
+        font-size: clamp(1rem, 6vw, 2.2rem);
         font-weight: 400px;
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
@@ -85,7 +85,7 @@ export const ImageContent = styled.div`
 
     p{
         margin-bottom: 1.2rem;
-        font-size: clamp(1rem, 6vw, 2rem);
+        font-size: clamp(1rem, 6vw, 1.5rem);
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     }
 
@@ -106,7 +106,7 @@ export const Button= styled(Link)`
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px')};
     color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
-    font-size: ${({big}) => (big ? '20px' : '14px')};
+    font-size: ${({big}) => (big ? '20px' : '15px')};
 
     &:hover {
         transform: translateY(-2px);

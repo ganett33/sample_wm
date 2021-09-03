@@ -3,14 +3,14 @@ import '../components.css'
 
 export const ReviewsBox = styled.div`
     font-family:var(--ff-secondary);
-    height: 800px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1300px) {
         height: 1100px;
     }
     
@@ -20,15 +20,15 @@ export const ReviewsBox = styled.div`
 `;
 
 export const ReviewsWrapper = styled.div`
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 24px;
+    grid-gap: 25px;
     padding: 0 20px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1300px) {
         grid-template-columns: 1fr 1fr;
     }    
 
@@ -50,15 +50,15 @@ export const ReviewsCard = styled.div`
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transfrom: scale(1.02);
+        transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
 `;
 
 export const ReviewsIcon = styled.img`
-    height: 180px;
-    width: 300px;
+    height: 200px;
+    width: 280px;
     margin-bottom: 10px;
 `;
 

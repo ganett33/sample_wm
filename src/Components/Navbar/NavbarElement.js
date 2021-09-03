@@ -116,7 +116,7 @@ export const NavLink1 = styled(LinkRouter)`
         color: #f73859;
     }
     &.active {
-        border-bottom: 3px solid #000;
+        border-bottom: 1px solid #000;
     }
 `;
 

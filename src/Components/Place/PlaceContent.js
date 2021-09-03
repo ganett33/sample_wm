@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../components.css';
+import { 
+    PlaceBox,
+    PlaceTitle
+ } from './PlaceElement';
+
+
 
 const PlaceContent = () => {
+    const [readMore, setReadMore] = useState(false);
     return (
-        <div>
-           <h2 > Place </h2>
-           <h2 > Place </h2>
-           <h2 > Place </h2>
-        </div>
+        <PlaceBox>
+            <PlaceTitle>Place</PlaceTitle>
+        </PlaceBox>
     );
 }
 
 export default PlaceContent;
+
+

@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../components.css';
+import { 
+    Content,
+    PlacesBox,
+    PlacesTitle,
+    PlacesWrapper,
+    UnderLine
+ } from './PlacesElement';
+
+
 
 const PlacesContent = () => {
     return (
-        <div>
-           <h2 > Places </h2>
-           <h2 > Places </h2>
-           <h2 > Places </h2>
-        </div>
+        <PlacesBox>
+            <PlacesWrapper>
+            <PlacesTitle > Places <UnderLine/> </PlacesTitle>
+            <Content></Content>
+
+            </PlacesWrapper>
+        </PlacesBox>
+
+
     );
 }
 

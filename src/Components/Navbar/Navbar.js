@@ -49,6 +49,9 @@ const Navbar = ({ toggle }) => {
                         <NavLink1 to='/places'>Places</NavLink1>
                     </NavItem>
                     <NavItem>
+                        <NavLink1 to='/about'>About Us</NavLink1>
+                    </NavItem>
+                    <NavItem>
                         <NavLink2 onClick={toggleFooter}>Subscribe</NavLink2>
                     </NavItem>
                 </NavMenu>
