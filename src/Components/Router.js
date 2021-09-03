@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from '../components/Navbar/Navbar';
+import Sidebar from '../components/Sidebar/Sidebar'; 
 import Home from "../routes/Home";
 import Places from "../routes/Places";
 import Place from "../routes/Place";
@@ -7,8 +9,15 @@ import Signin from "../routes/Signin";
 
 
 const AppRouter = ({ isLoggedIn }) => {
+  const [isOpen, setIsOpen] = useState(false)
+      
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  };
   return (
     <Router>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar  toggle={toggle}/>
       <Switch>
         {isLoggedIn ? (
           <>
