@@ -1,18 +1,16 @@
 import React from 'react';
 import '../components.css';
 import image from '../../images/about1.jpg';
-import icon from '../../images/about2.jpg';
 import { 
     AboutBox,
     AboutHeader,
     AboutLogo,
-    AboutIcon,
-    AbooutWrapper,
     AboutImage,
     AboutContent,
     AboutTitle,
     AboutSubtitle,
-    AboutText
+    AboutText,
+    Content
 } from '../About/AboutElement';
 
 
@@ -21,17 +19,25 @@ const About = () => {
         <AboutBox>
             <AboutHeader>
                 <AboutImage src={image}/>
-                <AboutLogo>WordA'Mouth</AboutLogo>
+                <AboutLogo>Word A'Mouth</AboutLogo>
+                <AboutTitle>About us</AboutTitle>
             </AboutHeader>
-            <AbooutWrapper>
-                <AboutIcon src={icon}/>
                 <AboutContent>
-                    <AboutTitle>About Us</AboutTitle>
-                    <AboutSubtitle> melong melong</AboutSubtitle>
-                    <AboutText>loremipsum</AboutText>
+                    <Content>
+                    <AboutSubtitle>share hidden places with people</AboutSubtitle>
+                    <AboutText>
+                    Ham hock leberkas chicken dolore strip steak, drumstick lorem do irure voluptate shoulder.
+                    </AboutText>
+                    <br />
+                    <AboutText>
+                    Duis beef ribs sint, ribeye nisi venison pork belly landjaeger in meatball. Ut qui in laboris fatback venison, adipisicing duis proident ipsum short loin. Doner sunt do exercitation pancetta.
+                    </AboutText>
+                    <br />
+                    <AboutText>
+                    Ham hock leberkas chicken dolore strip steak, drumstick lorem do irure voluptate shoulder.
+                    </AboutText>
+                    </Content>
                 </AboutContent>
-
-            </AbooutWrapper>
         </AboutBox>
         
     );

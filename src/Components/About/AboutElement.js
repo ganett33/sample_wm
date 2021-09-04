@@ -3,6 +3,7 @@ import '../components.css';
 
 export const AboutBox = styled.div`
     width: 100%;
+    max-height: 1500px;
 
 `;
 
@@ -27,7 +28,7 @@ export const AboutLogo = styled.span`
     color: var(--clr-font1);
     font-size: 4.5rem;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 810px) {
         font-size: 3rem;
     }    
 
@@ -37,49 +38,88 @@ export const AboutLogo = styled.span`
     
 `;
 
-
-export const AbooutWrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em 1em;
-    width: 100%;
-
+export const Content = styled.div`
+    text-align: left;
+    margin: 10 auto;
 `;
 
 
 export const AboutContent = styled.article`
-    padding-top: 60px;
-    background: red;
-    justify-content: center;
-    align-items: center;
+    padding: 60px;
+    margin-left: 200px;
+    height: 600px;
+
+    @media screen and (max-width: 810px) {
+        padding: 40px;
+        margin-left: 100px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 30px;
+        height: 400px;
+    }
+    @media screen and (max-width: 350px) {
+        padding: 10px;
+    }
 
 `;
 
 
 export const AboutTitle = styled.h1`
-    color: black;
+    font-family: var(--ff-secondary);
+    background: black;
+    color: white;
+    font-size: 3rem;
+    writing-mode: vertical-lr;
+    padding: 20px;
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
 
+    @media screen and (max-width: 810px) {
+        left: 50px;
+        bottom: 400px;
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 610px) {
+        bottom: 500px;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    @media screen and (max-width: 500px) {
+        bottom: 600px;
+        font-size: 1rem;
+    }
 
 `;
 
 export const AboutSubtitle = styled.h3`
-    color: #f1f1f1;
+    display: inline-block;
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    font-size: 2rem;
+    padding: 30px 0 40px 0;
 
-
+    @media screen and (max-width: 810px) {
+        font-size: 1.5rem;
+        padding: 15px 0 20px 0;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 10px 0 15px 0;
+        font-size: 1rem;
+    }
 `;
 
 export const AboutText = styled.p`
+    font-family: var(--ff-secondary);
+    font-size: 2rem;
     color: black;
+    padding-bottom: 10px;
 
-
-`;
-
-export const AboutIcon = styled.img`
-    padding-top: 60px;
-    max-height: 800px;
-
-
-    opacity: 0.5;
-
-
+    @media screen and (max-width: 810px) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
+    }
 `;
