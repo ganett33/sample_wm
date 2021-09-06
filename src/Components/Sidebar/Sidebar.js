@@ -12,8 +12,9 @@ import {
   } from './SidebarElements';
 import { authService } from '../../fbase';
 
-  const onLogOutClick = () => authService.signOut();
-  const toggleFooter = () => {scroll.scrollToBottom();}      
+    const onLogOutClick = () => authService.signOut();
+    const toggleFooter = () => {scroll.scrollToBottom();}   
+
 export const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarBox isOpen={isOpen} onClick={toggle}>

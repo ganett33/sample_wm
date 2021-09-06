@@ -68,6 +68,9 @@ export const MobileIcon = styled(FaBars)`
             color: var(--clr-accent);
         }
     }
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
+    }
 `;
 
 export const NavMenu = styled.ul`
@@ -97,7 +100,7 @@ export const NavItem = styled.li`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #f73859;
+        color: var(--clr-accent);
     }
 `;
 
