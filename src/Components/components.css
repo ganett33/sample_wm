@@ -13,6 +13,7 @@
     --clr-font1: #000000;
     --clr-font2: #ffffff;
     --clr-accent: #f73859;
+    --clr-accent2: linear-gradient(220deg, rgba(189,0,255,1) 10%, rgba(0,163,255,1) 90%);
     --clr-sub: #ededed;
 
 }

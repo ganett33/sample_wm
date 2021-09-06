@@ -5,7 +5,7 @@ export const PlaceBox = styled.div`
     background: var(--clr-font1);
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     padding: 0 30px;
 `;
 

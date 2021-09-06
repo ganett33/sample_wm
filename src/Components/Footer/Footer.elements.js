@@ -28,6 +28,10 @@ export const FooterSubHeading = styled.p`
   font-family: var(--ff-primary);
   margin-bottom: 24px;
   font-size: 2rem;
+
+  @media screen and (max-width: 820px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const FooterSubText = styled.p`
@@ -45,6 +49,11 @@ export const Form = styled.form`
   @media screen and (max-width: 820px) {
     flex-direction: column;
     width: 80%;
+  }
+
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    width: 60%;
   }
 `;
 

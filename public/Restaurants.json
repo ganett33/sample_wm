@@ -56,7 +56,7 @@
         "street" : "100 Grange Road",
         "phone" : "027-3506315",
         "pop-items" : "Hey Benny, The Original, Green Bowl",
-        "hours:" : "Wed - Fri 7am to 3pm | Sat - Sun 8am to 3pm",
+        "hours:" : "Wednesday to Friday - 7am to 3pm | Saturday to Sunday - 8am to 3pm",
         "des" : "Benny & Brew is a fairly new café only having opened in 2019, but in that short time it has established itself as one of the best cafes in Tauranga. This french café offers vibrant flavours, fresh ingredients, and welcoming atmoshpere.",
         "lat" : "-37.67587115987794",
         "lng" : "176.14724729393728"
@@ -85,7 +85,7 @@
         "town" : "Greerton",
         "street" : "144 Chadwick Road",
         "phone" : "07-5799436",
-        "pop-items" : "Jerusalem, Kiwiana, Bombay",
+        "pop-items" : "Custard Brioche, Creamy Mushroom Crepe, French Toast",
         "hours" : "Monday to Friday - 7:30am to 3:30pm | Saturday 8am to 3pm",
         "des" : "Le Chat Noir is anything but bad luck (black cat joke), this quaint french café is the only Creperie in Tauranga.",
         "lat" : "-37.72751901588878",

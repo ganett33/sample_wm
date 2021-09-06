@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../components.css';
 import { 
     PlaceBox,
@@ -8,7 +8,7 @@ import {
 
 
 const PlaceContent = () => {
-    const [readMore, setReadMore] = useState(false);
+
     return (
         <PlaceBox>
             <PlaceTitle>Place</PlaceTitle>

@@ -5,7 +5,7 @@ export const PlacesBox = styled.div`
     background: var(--clr-font2);
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     padding: 0 30px;
 
 `;
@@ -22,7 +22,7 @@ export const UnderLine = styled.div`
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    align-item: center;
+    align-items: center;
 `;
 
 export const PlacesWrapper = styled.div`
@@ -45,7 +45,7 @@ export const Content = styled.div`
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transfrom: scale(1.02);
+        transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
