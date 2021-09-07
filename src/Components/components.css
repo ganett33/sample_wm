@@ -63,3 +63,40 @@
     transition-duration: 1s;
     transform: scale(1.08);
   }
+
+
+
+
+
+  /* Map component */
+  .map__section {
+    background-color: linear-gradient(220deg, rgba(189,0,255,1) 10%, rgba(0,163,255,1) 90%);
+
+  }
+  
+  .marker_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .marker_btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pop_up {
+    font-family: var(--ff-secondary);
+    color: #000;
+    font-size: .7rem;
+    width: 150px;
+  }
+
+  .pop_up h2 {
+    color: #000;
+  }
+  
+
+  .pop_up p {
+    color: #000;
+  }

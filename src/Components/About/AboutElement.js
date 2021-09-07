@@ -48,15 +48,16 @@ export const AboutContent = styled.article`
     padding: 60px;
     margin-left: 200px;
     height: 600px;
+    overflow-y: scroll;
 
-    @media screen and (max-width: 810px) {
+    @media screen and (max-width: 1010px) {
         padding: 40px;
         margin-left: 100px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 850px) {
         padding: 30px;
-        height: 400px;
+        height: 500px;
     }
     @media screen and (max-width: 350px) {
         padding: 10px;
@@ -88,7 +89,7 @@ export const AboutTitle = styled.h1`
     }
     @media screen and (max-width: 500px) {
         bottom: 600px;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
 `;
@@ -104,9 +105,9 @@ export const AboutSubtitle = styled.h3`
         font-size: 1.5rem;
         padding: 15px 0 20px 0;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 520px) {
         padding: 10px 0 15px 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 `;
 
@@ -116,10 +117,10 @@ export const AboutText = styled.p`
     color: black;
     padding-bottom: 10px;
 
-    @media screen and (max-width: 810px) {
+    @media screen and (max-width: 850px) {
         font-size: 1.5rem;
     }
-    @media screen and (max-width: 500px) {
-        font-size: 1rem;
+    @media screen and (max-width: 540px) {
+        font-size: 1.1rem;
     }
 `;
