@@ -66,11 +66,9 @@
 
 
 
-
-
   /* Map component */
   .map__section {
-    background: var(--clr-accent2);
+    background: var(--clr-sub);
     padding: .5rem;
     display: flex;
     align-items: center;
@@ -81,12 +79,11 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: #000;
   }
   
-  .marker_btn img {
-    width: 20px;
+  .img_logo {
     height: 20px;
+    color: #000;    
   }
   
   .pop_up {

@@ -55,7 +55,7 @@ export const SidebarLink = styled(LinkRouter)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;

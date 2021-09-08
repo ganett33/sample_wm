@@ -66,8 +66,8 @@ const Signinform = () => {
         <>
          <Box>
          <FormWrap>
-            <Icon to="/" >
-            <IconContent to="/">Word A'Mouth</IconContent>
+            <Icon to="/sign-in" >
+            <IconContent to="/sign-in">Word A'Mouth</IconContent>
             </Icon>
                 <FormContent>
                     <Form onSubmit={onSubmit}>

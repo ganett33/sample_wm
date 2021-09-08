@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
+import logo from "../../images/logo.svg"
 import shops from "../Restaurants.json";
 import "../components.css";
 
@@ -9,8 +10,8 @@ export const MapComponent = () => {
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "950vw",
-        height: "60vh",
+        width: "900vw",
+        height: "50vh",
         zoom: 12
     });
     const [seletedShop, setSelectedShop] = useState(null);
@@ -32,7 +33,7 @@ export const MapComponent = () => {
         <div className="map__section">
             <ReactMapGL {...viewport} 
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-            mapStyle="mapbox://styles/ganett33/ckt9ayb7c5rg018potqb7wfd7"
+            mapStyle="mapbox://styles/ganett33/cktba8yx62dxu17o5duzilwv2"
             onViewportChange={viewport => {
                 setViewport(viewport);
                 }}
@@ -49,7 +50,7 @@ export const MapComponent = () => {
                                 setSelectedShop(shop);
                             }}    
                         >
-                            <img src="/src/images/logo.svg" alt="WAM" />
+                            <img className="img_logo" src={logo} alt="WAM" />
                         </button>
                     </Marker>
                 ))}
