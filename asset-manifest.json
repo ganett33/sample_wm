@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sample_wm/static/css/main.4a44ed7f.chunk.css",
+    "main.js": "/sample_wm/static/js/main.b89d1378.chunk.js",
+    "main.js.map": "/sample_wm/static/js/main.b89d1378.chunk.js.map",
+    "runtime-main.js": "/sample_wm/static/js/runtime-main.d1ac5d46.js",
+    "runtime-main.js.map": "/sample_wm/static/js/runtime-main.d1ac5d46.js.map",
+    "static/js/2.f840d915.chunk.js": "/sample_wm/static/js/2.f840d915.chunk.js",
+    "static/js/2.f840d915.chunk.js.map": "/sample_wm/static/js/2.f840d915.chunk.js.map",
+    "index.html": "/sample_wm/index.html",
+    "static/css/main.4a44ed7f.chunk.css.map": "/sample_wm/static/css/main.4a44ed7f.chunk.css.map",
+    "static/js/2.f840d915.chunk.js.LICENSE.txt": "/sample_wm/static/js/2.f840d915.chunk.js.LICENSE.txt",
+    "static/media/about1.10c8c243.jpg": "/sample_wm/static/media/about1.10c8c243.jpg",
+    "static/media/hamburger.34cc68e4.jpg": "/sample_wm/static/media/hamburger.34cc68e4.jpg",
+    "static/media/korean.23fe3823.jpg": "/sample_wm/static/media/korean.23fe3823.jpg",
+    "static/media/pasta.f0158a18.jpg": "/sample_wm/static/media/pasta.f0158a18.jpg",
+    "static/media/video.00370946.mp4": "/sample_wm/static/media/video.00370946.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1ac5d46.js",
+    "static/js/2.f840d915.chunk.js",
+    "static/css/main.4a44ed7f.chunk.css",
+    "static/js/main.b89d1378.chunk.js"
+  ]
+}
