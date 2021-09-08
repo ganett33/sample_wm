@@ -70,8 +70,11 @@
 
   /* Map component */
   .map__section {
-    background-color: linear-gradient(220deg, rgba(189,0,255,1) 10%, rgba(0,163,255,1) 90%);
-
+    background: var(--clr-accent2);
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .marker_btn {

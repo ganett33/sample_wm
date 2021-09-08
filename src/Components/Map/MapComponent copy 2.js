@@ -9,7 +9,7 @@ export const MapComponent = () => {
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "950vw",
+        width: "100vw",
         height: "60vh",
         zoom: 12
     });
@@ -49,7 +49,7 @@ export const MapComponent = () => {
                                 setSelectedShop(shop);
                             }}    
                         >
-                            <img src="./logo2.svg" alt="WAM" />
+                            <img src="/logo2.svg" alt="WAM" />
                         </button>
                     </Marker>
                 ))}

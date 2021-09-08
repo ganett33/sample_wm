@@ -100,6 +100,7 @@ export const FormLabel = styled.label`
 `;
 
 export const FormInput = styled.input`
+     color: #000;
      padding: 16px 16px;
      margin-bottom: 30px;
      border: none;
