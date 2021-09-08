@@ -49,7 +49,7 @@ export const MapComponent = () => {
                                 setSelectedShop(shop);
                             }}    
                         >
-                            <img src="./logo2.svg" alt="WAM" />
+                            <img src="/src/images/logo.svg" alt="WAM" />
                         </button>
                     </Marker>
                 ))}
