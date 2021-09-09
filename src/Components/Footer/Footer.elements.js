@@ -6,7 +6,7 @@ import '../components.css';
 
 export const FooterContainer = styled.div`
   background-color: #000;
-  padding: 4rem 0 2rem 0;
+  padding: 3.5rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +22,11 @@ export const FooterSubscription = styled.section`
   margin-bottom: 24px;
   padding: 24px;
   color: #fff;
+
+  @media screen and (max-width: 820px) {
+    margin-bottom: 10px;
+    padding: 12px;
+  }
 `;
 
 export const FooterSubHeading = styled.p`
@@ -84,7 +89,7 @@ export const FooterLinksContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 820px) {
-    padding-top: 32px;
+    padding-top: 10px;
   }
 `;
 

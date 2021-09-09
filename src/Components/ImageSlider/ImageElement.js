@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 export const ImageSection = styled.section`
+    background-color: black;
+    padding: .5rem;
     font-family: var(--ff-secondary);
     height: 60vh;
     max-height: 1000px;
