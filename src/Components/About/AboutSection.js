@@ -7,7 +7,6 @@ import {
     AboutLogo,
     AboutImage,
     AboutContent,
-    AboutTitle,
     AboutSubtitle,
     AboutText,
     Content
@@ -19,8 +18,7 @@ const About = () => {
         <AboutBox>
             <AboutHeader>
                 <AboutImage src={image}/>
-                <AboutLogo>Word A'Mouth</AboutLogo>
-                <AboutTitle>About us</AboutTitle>
+                <AboutLogo>About us</AboutLogo>
             </AboutHeader>
                 <AboutContent>
                     <Content>

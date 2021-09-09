@@ -23,9 +23,11 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutLogo = styled.span`
+    background-color: black;
+    padding: 5px 10px;
     position: absolute;
-    font-family: var(--ff-primary);
-    color: var(--clr-font1);
+    font-family: var(--ff-secondary);
+    color: white;
     font-size: 4.5rem;
 
     @media screen and (max-width: 810px) {
@@ -66,39 +68,11 @@ export const AboutContent = styled.article`
 `;
 
 
-export const AboutTitle = styled.h1`
-    font-family: var(--ff-secondary);
-    background: black;
-    color: white;
-    font-size: 3rem;
-    writing-mode: vertical-lr;
-    padding: 20px;
-    position: absolute;
-    left: 100px;
-    bottom: 300px;
-
-    @media screen and (max-width: 810px) {
-        left: 50px;
-        bottom: 400px;
-        font-size: 2rem;
-    }
-    @media screen and (max-width: 610px) {
-        bottom: 500px;
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-    @media screen and (max-width: 500px) {
-        bottom: 600px;
-        font-size: 1.3rem;
-    }
-
-`;
-
 export const AboutSubtitle = styled.h3`
     display: inline-block;
     color: var(--clr-accent);
-    font-family: var(--ff-secondary);
-    font-size: 2rem;
+    font-family: var(--ff-primary);
+    font-size: 2.4rem;
     padding: 30px 0 40px 0;
 
     @media screen and (max-width: 810px) {

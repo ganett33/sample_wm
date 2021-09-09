@@ -11,7 +11,7 @@
         "pop-items" : "Fiorentina, Ravioli Boscaiola, Sorisso",
         "hours:" : "Monday to Sunday - 4 pm to 9:30 pm",
         "des" : "Mamma Mia is a family owned restaurant, tucked away from the main street in downtown this hidden gem has been running since 2012, serving italian cuisine in a quaint trattoria inspired venue.",
-        "geo" : [-37.635940936446936 ,176.1817318930913]
+        "geo" : [-37.63605849729537, 176.18179140491483]
         
     },
     {
@@ -26,7 +26,7 @@
         "pop-items" : "Roasted Beans, Cold Brew, Brownie",
         "hours:" : "Monday to Friday - 7am to 4pm",
         "des" : "Hidden away near the CBD, Excelso is the best cup of coffee you can get in Tauranga. They also offer beans roasted fresh in their store, along with a few cabinet items and coffee equipment.",
-        "geo" : [-37.68953450422873, 176.16315277421057]
+        "geo" : [-37.68972858477087, 176.16315792997653]
     },
     {
         "id" : 2,
@@ -40,7 +40,7 @@
         "pop-items" : "Hey Benny, The Original, Green Bowl",
         "hours:" : "Wednesday to Friday - 7am to 3pm | Saturday to Sunday - 8am to 3pm",
         "des" : "Benny & Brew is a fairly new café only having opened in 2019, but in that short time it has established itself as one of the best cafes in Tauranga. This french café offers vibrant flavours, fresh ingredients, and welcoming atmoshpere.",
-        "geo" : [-37.67587115987794, 176.14724729393728]
+        "geo" : [-37.67606752147782, 176.1472103089827]
     },
     {
         "id" : 3,
@@ -68,7 +68,7 @@
         "pop-items" : "Custard Brioche, Creamy Mushroom Crepe, French Toast",
         "hours" : "Monday to Friday - 7:30am to 3:30pm | Saturday 8am to 3pm",
         "des" : "Le Chat Noir is anything but bad luck (black cat joke), this quaint french café is the only Creperie in Tauranga.",
-        "geo" : [-37.72751901588878, 176.1351787225134]
+        "geo" : [-37.727681849043535, 176.1352144886846]
     },
     {
         "id" : 5,
@@ -82,7 +82,7 @@
         "pop-items" : "Patatas Bravas, Blackberry Breakfast, Smoked Salmon Salad",
         "hours" : "Monday to Sunday - 7:30am to 3:30pm",
         "des" : "Le Chat Noir is anything but bad luck (black cat joke), this quaint french café is the only Creperie in Tauranga.",
-        "geo" : [-37.70084459440692, 176.2797252523486]
+        "geo" : [-37.70102319586222, 176.27965351877685]
     },
     {
         "id" : 6,
@@ -96,7 +96,7 @@
         "pop-items" : "Pulled Pork Burger, Tiki Dumpling, Honey Hussy Golden Ale",
         "hours" : "Monday to Sunday - 11:30am to 10:30pm",
         "des" : "The Rising Tide is a killer combo of Brewery and eatery, hidden away in an industrial area is fresh food and even fresher brews. This is a choice place to visit after work for a drink and a bite.",
-        "geo" : [-37.66186872993112, 176.20456653588613]
+        "geo" : [-37.661832624973734, 176.20478620429688]
     },
     {
         "id" : 7,
@@ -110,7 +110,7 @@
         "pop-items" : "Original Glazed, Passionfruit Curd, Cookies & Cream",
         "hours" : "Thursday to Saturday - 7am to 1pm",
         "des" : "Mamas Donuts serves fresh donuts baked daily, residing on the side of a busy road makes Mamas Donuts a bit hard to access, but trust me it's worth it.",
-        "geo" : [-37.70508159329787, 176.15223399492746]
+        "geo" : [-37.70526663645685, 176.1522725339929]
     },
 
     {
@@ -125,7 +125,7 @@
         "pop-items" : "Mother Hen, Smoked Beef Brisket Burger, Eggs in Purgatory",
         "hours" : "Monday to Sunday - 7am to 3pm",
         "des" : "Henry  & Ted is a tidy cafe in Papamoa, hidden away near the main beach they serve italian inspired dishes using fresh seasonal ingredients.",
-        "geo" : [-37.717935680524505, 176.34280667060952]
+        "geo" : [-37.718112000807544, 176.3427762298118]
     }
 
 
