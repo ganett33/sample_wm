@@ -11,9 +11,9 @@ export const MapComponent = () => {
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "900vw",
+        width: "1000vw",
         height: "50vh",
-        zoom: 12
+        zoom: 11
     });
     const [seletedShop, setSelectedShop] = useState(null);
 

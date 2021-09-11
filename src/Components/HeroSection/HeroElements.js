@@ -7,7 +7,7 @@ export const HeroBox = styled.div`
     background: #0c0c0c;
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     padding: 0 30px;
     height: 800px;
     position: relative;
@@ -83,7 +83,7 @@ export const HeroP = styled.p`
     color: #fff;
     font-size: 22px;
     text-align: center;
-    max-width: 600px
+    max-width: 600px;
 
     @media screen and (max-width: 768px) {
         font-size: 24px;
@@ -115,11 +115,11 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 export const HeroBtn = styled(LinkRouter)`
 font-family: var(--ff-primary);
 border-radius: 20px;
-background: ${({ primary }) => (primary ? '#f73859' : '#ededed')};
+background: var(--clr-light);
 white-space: nowrap;
-padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-color: ${({ dark }) => (dark ? '#010606' : '#fff')};
-font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+padding: 14px 45px;
+color: var(--clr-dark);
+font-size: 20px;
 outline: none;
 border: none;
 cursor: pointer;
@@ -129,7 +129,12 @@ transition: all 0.2s ease-in-out;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? '#fff' : '#010606')};
+    background: var(--clr-accent);
 };
+
+@media screen and (max-width: 480px) {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
 
 `;
