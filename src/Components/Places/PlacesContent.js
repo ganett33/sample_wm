@@ -29,8 +29,8 @@ class PlacesContent extends React.Component {
                 this.state.shops &&
                 this.state.shops.map( shop => {
                     return (
-                <Link to={`/places/${shop._id}`}>
-                    <div className="card" key={shop._id} >
+                <Link to={`/places/${shop.id}`}>
+                    <div className="card" key={shop.id} >
                     <div className="card-top">
                         <h4 className="card-title" id={shop.id}>{shop.name}</h4>
                     </div>
