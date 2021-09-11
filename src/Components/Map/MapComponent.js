@@ -32,7 +32,7 @@ export const MapComponent = () => {
     return (
         <div className="map__section">
             <ReactMapGL {...viewport} 
-            mapboxApiAccessToken="pk.eyJ1IjoiZ2FuZXR0MzMiLCJhIjoiY2t0YmI1MXRyMXVyYzJucXdrbjIwenUzOSJ9.F-KBm6hprlt0DDtOScjMzA"
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
             mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
             onViewportChange={viewport => {
                 setViewport(viewport);
