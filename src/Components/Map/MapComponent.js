@@ -3,7 +3,8 @@ import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import logo from "../../images/logo.svg"
 import shops from "../Restaurants.json";
 import "../components.css";
-
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+ReactMapGL.workerClass = MapboxWorker;
 
 export const MapComponent = () => {
 
