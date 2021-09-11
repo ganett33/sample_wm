@@ -1,12 +1,13 @@
 import React from 'react';
 import PlacesContent from '../components/Places/PlacesContent';
-import HeroSection from '../components/HeroSection/HeroSection';
-
+import Reviews from '../components/Reviews/Reviews';
+import MapComponent from  '../components/Map/MapComponent';
 
 const Places = () => {
     return (
         <>
-        <HeroSection/>
+        <Reviews />
+        <MapComponent />
         <PlacesContent />
       </>
     )

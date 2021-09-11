@@ -103,7 +103,7 @@ export const Button= styled(Link)`
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s;
-    diplay: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px')};
@@ -119,7 +119,7 @@ export const Button= styled(Link)`
 
 export const SliderButtons = styled.div`
     position: absolute;
-    botton: 50px;
+    bottom: 50px;
     right: 50px;
     display: flex;
     z-index: 10;
@@ -138,7 +138,7 @@ export const arrowsButtons = css`
     transition:0.3s;
 
     &:hover {
-        background: #cd853f;
+        background: var(--clr-accent);
         transform: sclae(1.05);
     }
 `;
