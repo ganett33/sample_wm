@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Sidebar from '../components/Sidebar/Sidebar'; 
 import Home from "../routes/Home";
 import Places from "../routes/Places";
-import Place from "../routes/Place";
+import Detail from "../routes/Detail";
 import Signin from "../routes/Signin";
 import About from '../routes/About';
 import Footer from './Footer/Footer';
@@ -27,8 +27,8 @@ const AppRouter = ({ isLoggedIn }) => {
               <Home />
             </Route>
             <Route path='/about' exact component={About} />
-            <Route path='/places' exact component={Places} />
-            <Route path='/place' exact component={Place} />
+            <Route path='/places' component={Places} />
+            <Route path='/place/:id' component={Detail} />
             <Footer />
           </>
         ) : (

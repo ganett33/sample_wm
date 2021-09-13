@@ -23,23 +23,30 @@
   }
   
   .card-title {
-    font-family: var(--ff-primary);
     font-size: 1.5rem;
     color: var(--clr-accent);
+    font-family: var(--ff-primary);
     line-height: 1rem;
     margin-bottom: 1rem;
   }
   
-  .card-body {
-    font-size: .5rem;
+  .card__body {
+    font-size: 1rem;
     padding-bottom: 1rem;
     padding: 0;
-    font-family: var(--ff-secondary);
   }
   
-  .card-text {
+  .card__body_title {
     font-size: 1rem;
     color: #fff;
+    font-family: var(--ff-primary);
+    padding: 1px;
+  }
+
+  .card__body_text {
+    font-size: 1rem;
+    color: #fff;
+    font-family: var(--ff-secondary);
     padding: 1px;
   }
   
@@ -52,10 +59,6 @@
   .card {
     text-decoration: none;
     transition: 0.3s ease;
-  }
-  
-  .card:hover  {
-    text-decoration: underline;
   }
   
   .card {

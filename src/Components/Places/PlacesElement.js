@@ -15,7 +15,6 @@ export const PlacesTitle = styled.h2`
     color: var(--clr-accent);
 `;
 
-
 export const UnderLine = styled.div`
     height: 0.25rem;
     background: var(--clr-accent);
