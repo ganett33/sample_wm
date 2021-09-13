@@ -1,16 +1,14 @@
 import React from 'react';
-import Place from '../components/Place/PlaceContent';
+import PicForPlace from '../components/PicforPlace/PicforPlace';
 import { SliderData } from '../components/ImageSlider/SliderData';
-import ImageSlider from '../components/ImageSlider/ImageSlider';
 
 
-const Places = () => {
+const PlacesPage = () => {
     return (
         <>
-        <ImageSlider slides={SliderData}/>
-        <Place />
+        <PicForPlace slides={SliderData}/>
       </>
     )
 }
 
-export default Places;
+export default PlacesPage;

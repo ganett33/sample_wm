@@ -8,7 +8,7 @@ export const ReviewsBox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: var(--clr-dark);
 
     @media screen and (max-width: 1300px) {
         height: 1100px;

@@ -14,7 +14,7 @@
     --clr-font2: #ffffff;
     --clr-accent: #f73859;
     --clr-dark: #010606;
-    --clr-light: #f86b83;
+    --clr-light: #f7385880;
     --clr-sub: #ededed;
 
 }
@@ -69,7 +69,7 @@
 
   /* Map component */
   .map__section {
-    background: var(--clr-sub);
+    background: var(--clr-dark);
     padding: .5rem;
     display: flex;
     align-items: center;
@@ -84,21 +84,21 @@
   
   .img_logo {
     height: 20px;
-    color: #000;    
+    color: var(--clr-dark);    
   }
   
   .pop_up {
     font-family: var(--ff-secondary);
-    color: #000;
+    color: var(--clr-dark);
     font-size: .7rem;
     width: 150px;
   }
 
   .pop_up h2 {
-    color: #000;
+    color: var(--clr-dark);
   }
   
 
   .pop_up p {
-    color: #000;
+    color: var(--clr-dark);
   }

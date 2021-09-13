@@ -19,7 +19,7 @@ const AppRouter = ({ isLoggedIn }) => {
   return (
     <Router>
         <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar  toggle={toggle}/>
+        <Navbar toggle={toggle}/>
       <Switch>
         {isLoggedIn ? (
           <>

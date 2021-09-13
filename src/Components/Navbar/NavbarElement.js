@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import {Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background:${({scrollNav}) => (scrollNav ? '#000' : '#1112')};
+    background:${({scrollNav}) => (scrollNav ? 'var(--clr-dark)' : '#1112')};
     font-family: var(--ff-primary);
     height: 80px;
     margin-top: -80px;
