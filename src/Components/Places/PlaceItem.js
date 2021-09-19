@@ -20,8 +20,9 @@ function PlaceItem ({id,category,name,des,street,town,state,hours,pop, phone, ge
                 geo
             }
         }}
-        >
+        >        
             <div className="card" key={id} >
+            <img src="https://picsum.photos/200/300?random=1" alt="{name}" />
             <div className="card-top">
                 <h4 className="card-title" id={id}>{name}</h4>
             </div>

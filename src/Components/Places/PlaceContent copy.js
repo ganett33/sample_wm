@@ -4,6 +4,7 @@ import { dbService } from '../../fbase';
 import './places.css';
 
 
+
 class PlacesContent extends React.Component {
     state = {
         shops: null

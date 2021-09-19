@@ -1,21 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { IconContext } from 'react-icons';
+import {
+  AccordionSection,
+  Container,
+  Wrap,
+  Dropdown,
+  TopContent,
+  TopContent1,
+  TopContent2,
+  TopConten3,
+  Title,
+  Subtitle
+} from './DetailComponent';
+import { FiPlus, FiMinus } from 'react-icons/fi';
+import Shops from '../Restaurants.json';
 
-class DetailContent extends React.Component{
-  componentDidMount() {
-  const {location, history} = this.props;
-  if (location.state === undefined) {
-    history.push("/");
-  }
-}
-  render() {
-    const { location } = this.props;
-    if(location.state) {
-      return (
-      <span>{location.state.name}</span>)
-    } else {
-      return null;
-    }  
+
+const Accordion = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = index => {
+    if (clicked === index) {
+      //if clicked question is already active, then close it
+      return setClicked(null);
     }
-}
 
-export default DetailContent;
+    setClicked(index);
+  };
+
+  return (
+    <IconContext.Provider value={{ color: '#00FFB9', size: '25px' }}>
+      <AccordionSection>
+        <Container>
+          {Shops.map((shop, index) => {
+            return (
+              <>
+                <Wrap onClick={() => toggle(index)} key={index}>
+                  <TopContent>
+                      <TopContent1>
+                        <Title>{shop.name}</Title>
+                      </TopContent1>
+                      <TopContent2>
+                        <Subtitle>Category: </Subtitle>
+                        <Subtitle>{shop.category}</Subtitle>
+                      </TopContent2>
+                      <TopConten3>
+                        <Subtitle>Popular Menues: </Subtitle>
+                        <Subtitle>{shop.pop}</Subtitle>
+                      </TopConten3>
+                  </TopContent>
+                  <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
+                </Wrap>
+                {clicked === index ? (
+                  <Dropdown>
+                    <div className="card-body">
+                      <Subtitle>Opening hours: </Subtitle>
+                      <Subtitle>{shop.hours}</Subtitle>
+                      <Subtitle>Description: </Subtitle>
+                      <Subtitle>{shop.des}</Subtitle>
+                    </div>
+                  </Dropdown>
+                ) : null}
+
+              </>
+            );
+          })}
+        </Container>
+      </AccordionSection>
+    </IconContext.Provider>
+  );
+};
+
+export default Accordion;

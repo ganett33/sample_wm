@@ -16,7 +16,7 @@ class PlacesContent extends React.Component {
             const shops = []
             snapshot.forEach( doc => {
                 const data = doc.data()
-                shops.push(data)
+                shops(data)
             })
             this.setState({ shops })
         })
