@@ -87,8 +87,7 @@ export const Dropdown = styled.div`
 `;
 export const DropdownContent = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .5fr 1fr;
   grid-gap: 5px;
   margin: 5px;
 `;
@@ -105,6 +104,7 @@ export const ContenetImage = styled.image`
 
 export const ContentBottom = styled.div`
   display: flex;
+  
 `;
 
 export const ContentReview = styled.div`

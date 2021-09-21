@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import logo from "../../images/logo.svg"
-import shops from "../Restaurants.json";
+import { dbService } from '../../fbase';
+import { onSnapshot, collection } from "firebase/firestore";
 import "./Minimap.css";
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 ReactMapGL.workerClass = MapboxWorker;
@@ -11,11 +12,22 @@ export const MiniMap = () => {
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "40vw",
+        width: "400px",
         height: "20vh",
         zoom: 10
+
     });
     const [seletedShop, setSelectedShop] = useState(null);
+    const [shops, setShops] = useState([]);
+    
+    useEffect(
+        () =>
+          onSnapshot(collection(dbService, "shops"), (snapshot) =>
+          setShops(snapshot.docs.map((doc) => ({ ...doc.data() })))
+          ),
+        []
+      );
+
 
     useEffect(() => {
         const listener = e => {
@@ -42,8 +54,8 @@ export const MiniMap = () => {
                 {shops.map(shop => (
                     <Marker 
                         key={shop.id}
-                        latitude={shop.content.geo[0]}
-                        longitude={shop.content.geo[1]}
+                        latitude={shop.geo.latitude}
+                        longitude={shop.geo.longitude}
                     >
                         <button className="marker_btn"
                             onClick={e => {
@@ -58,14 +70,14 @@ export const MiniMap = () => {
 
                 {seletedShop ? (
                     <Popup 
-                        latitude={seletedShop.content.geo[0]} 
-                        longitude={seletedShop.content.geo[1]}
+                        latitude={seletedShop.geo.latitude} 
+                        longitude={seletedShop.geo.longitude}
                         onClose={() => {
                             setSelectedShop(null);
                         }}
                     >
                         <div className="pop_up">
-                            <h2>{seletedShop.content.name}</h2>
+                            <h2>{seletedShop.name}</h2>
 
                         </div>
                     </Popup>

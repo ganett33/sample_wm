@@ -10,25 +10,39 @@ import {
   DropdownContent,
   ContenetImage,
   ContentBottom,
-  ContentReview,
   Title,
   Subtitle
 } from './DetailComponent';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import ReactMapGL, {Marker, Popup} from "react-map-gl";
+import logo from "../../images/logo.svg"
 import { dbService } from '../../fbase';
 import { onSnapshot, collection } from "firebase/firestore";
-import Minimap from '../MiniMap/MiniMap';
+import "../MiniMap/Minimap.css";
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+ReactMapGL.workerClass = MapboxWorker;
+
+
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(false);
-  const [shops, setShops] = useState([ ]);
+  const [shops, setShops] = useState([]);
+  const [viewport, setViewport] = useState({
+    latitude: -37.68279137620957, 
+    longitude: 176.1660871874423,
+    width: "400px",
+    height: "20vh",
+    zoom: 8
+
+});
+const [seletedShop, setSelectedShop] = useState(null);
+
 
   const toggle = index => {
     if (clicked === index) {
       //if clicked question is already active, then close it
       return setClicked(null);
     }
-
     setClicked(index);
   };
 
@@ -58,6 +72,12 @@ const Accordion = () => {
                 {clicked === index ? (
                   <Dropdown>
                     <DropdownContent>
+                    <Subtitle>Review: </Subtitle>
+                    <Subtitle>{shop.review}</Subtitle>
+                    <Subtitle>Address: </Subtitle>
+                      <Subtitle>{shop.street}, {shop.town}, {shop.city}, {shop.state}</Subtitle>
+                      <Subtitle>Phone: </Subtitle>
+                      <Subtitle>{shop.phone}</Subtitle>
                     <Subtitle>Category: </Subtitle>
                       <Subtitle>{shop.category}</Subtitle>
                     <Subtitle>Popular Menues: </Subtitle>
@@ -66,16 +86,49 @@ const Accordion = () => {
                       <Subtitle>{shop.hours}</Subtitle>
                       <Subtitle>Description: </Subtitle>
                       <Subtitle>{shop.des}</Subtitle>
-                      <Subtitle>Address: </Subtitle>
-                      <Subtitle>{shop.street}, {shop.town}, {shop.city}, {shop.state}</Subtitle>
-                      <Subtitle>Phone: </Subtitle>
-                      <Subtitle>{shop.phone}</Subtitle>
+                      
                       <ContenetImage>
                       </ContenetImage>
                     <ContentBottom>
-                      <ContentReview>
-                      <Minimap />
-                      </ContentReview>
+                    <div className="map__section">
+            <ReactMapGL {...viewport} 
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+            mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
+            onViewportChange={viewport => {
+                setViewport(viewport);
+                }}
+            >
+                    <Marker 
+                        key={shop.id}
+                        latitude={shop.geo.latitude}
+                        longitude={shop.geo.longitude}
+                    >
+                        <button className="marker_btn"
+                            onClick={e => {
+                                e.preventDefault();
+                                setSelectedShop(shop);
+                            }}    
+                        >
+                            <img className="img_logo" src={logo} alt="WAM" />
+                        </button>
+                    </Marker>
+
+                {seletedShop ? (
+                    <Popup 
+                        latitude={seletedShop.geo.latitude} 
+                        longitude={seletedShop.geo.longitude}
+                        onClose={() => {
+                            setSelectedShop(null);
+                        }}
+                    >
+                        <div className="pop_up">
+                            <h2>{seletedShop.name}</h2>
+
+                        </div>
+                    </Popup>
+                ):null}    
+             </ReactMapGL>
+        </div>
                     </ContentBottom>
 
                     </DropdownContent>
