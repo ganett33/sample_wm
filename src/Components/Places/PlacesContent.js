@@ -12,30 +12,22 @@ import {
   ContentBottom,
   Title,
   Subtitle
-} from './DetailComponent';
+} from './PlacesComponent';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import logo from "../../images/logo.svg"
 import { dbService } from '../../fbase';
 import { onSnapshot, collection } from "firebase/firestore";
-import "../MiniMap/Minimap.css";
+import "./Minimap.css";
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 ReactMapGL.workerClass = MapboxWorker;
 
 
-
-const Accordion = () => {
+const PlacesContent = () => {
   const [clicked, setClicked] = useState(false);
   const [shops, setShops] = useState([]);
-  const [viewport, setViewport] = useState({
-    latitude: -37.68279137620957, 
-    longitude: 176.1660871874423,
-    width: "400px",
-    height: "20vh",
-    zoom: 8
-
-});
-const [seletedShop, setSelectedShop] = useState(null);
+  const [viewport, setViewport] = useState({});
+  const [seletedShop, setSelectedShop] = useState(null);
 
 
   const toggle = index => {
@@ -86,7 +78,6 @@ const [seletedShop, setSelectedShop] = useState(null);
                       <Subtitle>{shop.hours}</Subtitle>
                       <Subtitle>Description: </Subtitle>
                       <Subtitle>{shop.des}</Subtitle>
-                      
                       <ContenetImage>
                       </ContenetImage>
                     <ContentBottom>
@@ -95,7 +86,13 @@ const [seletedShop, setSelectedShop] = useState(null);
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
             mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
             onViewportChange={viewport => {
-                setViewport(viewport);
+                setViewport({
+                  latitude: shop.geo.latitude, 
+                  longitude: shop.geo.longitude,
+                  width: "400px",
+                  height: "20vh",
+                  zoom: 16
+              });
                 }}
             >
                     <Marker 
@@ -123,7 +120,6 @@ const [seletedShop, setSelectedShop] = useState(null);
                     >
                         <div className="pop_up">
                             <h2>{seletedShop.name}</h2>
-
                         </div>
                     </Popup>
                 ):null}    
@@ -144,4 +140,4 @@ const [seletedShop, setSelectedShop] = useState(null);
   );
 };
 
-export default Accordion;
+export default PlacesContent;

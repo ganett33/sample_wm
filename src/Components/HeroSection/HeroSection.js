@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <HeroBtn  
-                    to='/place'
+                    to='/places'
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
