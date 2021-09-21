@@ -6,19 +6,20 @@ export const AccordionSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 120vh;
+  min-height: 130vh;
   background: #ffffff;
 `;
 
 export const Container = styled.div`
   position: absolute;
-  margin: 10px;
+  margin: 20px;
+  width: -webkit-fill-available;
   box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
 `;
 
 export const Wrap = styled.div`
   background: var(--clr-dark);
-  color: #ffffff;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +27,7 @@ export const Wrap = styled.div`
   width: 100%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid pink;
+  border: 2px solid #f73859;
 
   h1 {
     padding: 2rem;
@@ -40,28 +41,34 @@ export const Wrap = styled.div`
 
 export const TopContent = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
-  
+
 
   @media screen and (max-width: 750px) {
     justify-content: center;
   }
+  
 `;
 
 export const TopContent1 = styled.div`
-  display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-start; 
+
 `;
 
 export const TopContent2 = styled.div`
-  display: flex;
+  justify-content: flex-start;
 `;
 
 export const TopConten3 = styled.div`
-  display: flex;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-start; 
 `;
-
 
 
 export const Dropdown = styled.div`
@@ -78,7 +85,32 @@ export const Dropdown = styled.div`
     font-size: 1srem;
   }
 `;
+export const DropdownContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  margin: 5px;
+`;
 
+export const ContentTop = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const ContenetImage = styled.image`
+  display: flex;
+`;
+
+
+export const ContentBottom = styled.div`
+  display: flex;
+`;
+
+export const ContentReview = styled.div`
+  display: flex;
+
+`; 
 
 export const Title = styled.h1`
   font-family: var(--ff-secondary);

@@ -15,7 +15,7 @@ function Places ({id,category,name,des,state,street,town,hours,pop, phone, geo} 
                             <h6 className="card-text">Opening hours: </h6>
                             <p className="card-text">{ hours}...</p>
                             <h6 className="card-text">Description: </h6>
-                            <p className="card-text">{ des.slice(0, 100)}...</p>
+                            <p className="card-text">{ des}...</p>
                         </div>
                     </div>
                 </Link>

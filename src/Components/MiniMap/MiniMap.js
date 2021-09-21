@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import logo from "../../images/logo.svg"
 import shops from "../Restaurants.json";
-import "./map.css";
+import "./Minimap.css";
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 ReactMapGL.workerClass = MapboxWorker;
 
-export const MapComponent = () => {
+export const MiniMap = () => {
 
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "1000vw",
-        height: "50vh",
-        zoom: 11
+        width: "40vw",
+        height: "20vh",
+        zoom: 10
     });
     const [seletedShop, setSelectedShop] = useState(null);
 
@@ -66,7 +66,7 @@ export const MapComponent = () => {
                     >
                         <div className="pop_up">
                             <h2>{seletedShop.content.name}</h2>
-                            <p>{seletedShop.content.des}</p>
+
                         </div>
                     </Popup>
                 ):null}    
@@ -75,4 +75,4 @@ export const MapComponent = () => {
     );
 }
 
-export default MapComponent;
+export default MiniMap;

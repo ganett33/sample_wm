@@ -34,7 +34,7 @@ function PlaceItem ({id,category,name,des,street,town,state,hours,pop, phone, ge
                     <h6 className="card__body_title">Popular Menu: </h6>
                     <p className="card__body_text">{pop}</p>
                     <h6 className="card__body_title">Description: </h6>
-                    <p className="card__body_text">{des.slice(0,60)}...</p>
+                    <p className="card__body_text">{des}...</p>
                 </div>
             </div>
         </Link>

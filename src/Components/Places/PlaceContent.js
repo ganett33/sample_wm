@@ -1,55 +1,46 @@
-import React from 'react';
-import PlaceItem from './PlaceItem';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { dbService } from '../../fbase';
+import { onSnapshot, collection } from "firebase/firestore";
 import './places.css';
 
 
-class PlacesContent extends React.Component {
-    state = {
-        shops: null
-    }
+export default function PlacesContent() {
+    const [shops, setShops] = useState([ ]);
 
-    componentDidMount() {
-        dbService.collection('shops')
-        .get()
-        .then( snapshot => {
-            const shops = []
-            snapshot.forEach( doc => {
-                const data = doc.data()
-                shops(data)
-            })
-            this.setState({ shops })
-        })
-        .catch( error => console.log(error))
-    }
-    render() {
-        const { shops } = this.state;
+
+    useEffect(
+        () =>
+          onSnapshot(collection(dbService, "shops"), (snapshot) =>
+          setShops(snapshot.docs.map((doc) => ({ ...doc.data() })))
+          ),
+        []
+      );
+      console.log(shops.id);
         return (
         <div className="section">
-            {   
-                shops &&
-                shops.map( shop => (
-                    <PlaceItem 
-                    key={shop.id}
-                    id={shop.id}
-                    name={shop.name}
-                    category={shop.category}
-                    des={shop.des}
-                    street={shop.street}
-                    town={shop.town}
-                    state={shop.state}
-                    hours={shop.hours}
-                    pop={shop.pop}
-                    phone={shop.phone}
-                    geo={shop.geo}
-                    
-                    />
-                )) 
+            {shops.map( shop => {
+                    return (
+                <Link to={`/place/${shop.id}`}>
+                    <div className="card" key={shop.id} >
+                    <div className="card-top">
+                        <h4 className="card-title" id={shop.id}>{shop.name}</h4>
+                    </div>
+                        <div className="card-body">
+                            <h6 className="card-text">Category:</h6>
+                            <p className="card-text">{shop.category}</p> 
+                            <h6 className="card-text">Opening hours: </h6>
+                            <p className="card-text">{shop.hours}...</p>
+                            <h6 className="card-text">Description: </h6>
+                            <p className="card-text">{shop.des}...</p>
+                        </div>
+                    </div>
+                </Link>
+                )}) 
             }
             </div> 
-        )
-    }
-}  
+        );
+}
 
 
-export default PlacesContent;
+

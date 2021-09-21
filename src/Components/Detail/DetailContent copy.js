@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import {
   AccordionSection,
@@ -7,6 +7,8 @@ import {
   Dropdown,
   TopContent,
   TopContent1,
+  TopContent2,
+  TopConten3,
   DropdownContent,
   ContenetImage,
   ContentBottom,
@@ -15,13 +17,11 @@ import {
   Subtitle
 } from './DetailComponent';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { dbService } from '../../fbase';
-import { onSnapshot, collection } from "firebase/firestore";
-import Minimap from '../MiniMap/MiniMap';
+import Shops from '../Restaurants.json';
+
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(false);
-  const [shops, setShops] = useState([ ]);
 
   const toggle = index => {
     if (clicked === index) {
@@ -32,19 +32,11 @@ const Accordion = () => {
     setClicked(index);
   };
 
-  useEffect(
-    () =>
-      onSnapshot(collection(dbService, "shops"), (snapshot) =>
-      setShops(snapshot.docs.map((doc) => ({ ...doc.data() })))
-      ),
-    []
-  );
-
   return (
     <IconContext.Provider value={{ color: '#00FFB9', size: '25px' }}>
       <AccordionSection>
         <Container>
-          {shops.map((shop, index) => {
+          {Shops.map((shop, index) => {
             return (
               <>
                 <Wrap onClick={() => toggle(index)} key={index}>
@@ -52,29 +44,29 @@ const Accordion = () => {
                       <TopContent1>
                         <Title>{shop.name}</Title>
                       </TopContent1>
+                      <TopContent2>
+                        <Subtitle>Category: </Subtitle>
+                        <Subtitle>{shop.category}</Subtitle>
+                      </TopContent2>
+                      <TopConten3>
+                        <Subtitle>Popular Menues: </Subtitle>
+                        <Subtitle>{shop.pop}</Subtitle>
+                      </TopConten3>
                   </TopContent>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
                   <Dropdown>
                     <DropdownContent>
-                    <Subtitle>Category: </Subtitle>
-                      <Subtitle>{shop.category}</Subtitle>
-                    <Subtitle>Popular Menues: </Subtitle>
-                      <Subtitle>{shop.pop}</Subtitle>
                     <Subtitle>Opening hours: </Subtitle>
                       <Subtitle>{shop.hours}</Subtitle>
                       <Subtitle>Description: </Subtitle>
                       <Subtitle>{shop.des}</Subtitle>
-                      <Subtitle>Address: </Subtitle>
-                      <Subtitle>{shop.street}, {shop.town}, {shop.city}, {shop.state}</Subtitle>
-                      <Subtitle>Phone: </Subtitle>
-                      <Subtitle>{shop.phone}</Subtitle>
                       <ContenetImage>
                       </ContenetImage>
                     <ContentBottom>
                       <ContentReview>
-                      <Minimap />
+                      
                       </ContentReview>
                     </ContentBottom>
 
