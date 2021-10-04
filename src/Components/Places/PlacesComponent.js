@@ -6,8 +6,12 @@ export const AccordionSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 130vh;
+  min-height: 80vh;
   background: #ffffff;
+
+  @media screen and (max-width: 500px) {
+    min-height: 90vh;
+  };
 `;
 
 export const Container = styled.div`
@@ -45,7 +49,7 @@ export const TopContent = styled.div`
   text-align: center;
 
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     justify-content: center;
   }
   
@@ -54,42 +58,28 @@ export const TopContent = styled.div`
 export const TopContent1 = styled.div`
     justify-content: center;
     align-items: center;
-    justify-self: flex-start; 
-
-`;
-
-export const TopContent2 = styled.div`
-  justify-content: flex-start;
-`;
-
-export const TopConten3 = styled.div`
-    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: flex-start; 
-`;
+    justify-self: flex-start;
+    padding: 10px; 
 
+`;
 
 export const Dropdown = styled.div`
   background: var(--clr-dark);
   color: #ffffff;
   width: 100%;
   display: flex;
-  padding: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    font-size: 1srem;
-  }
+  padding: 5px;
+  flex-wrap: wrap;
 `;
+
+
 export const DropdownContent = styled.div`
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-gap: 5px;
   margin: 5px;
+  flex-wrap: wrap;
 `;
 
 export const ContentTop = styled.div`
@@ -101,24 +91,27 @@ export const ContenetImage = styled.image`
   display: flex;
 `;
 
-
 export const ContentBottom = styled.div`
   display: flex;
   
 `;
 
-export const ContentReview = styled.div`
-  display: flex;
-
-`; 
-
-export const Title = styled.h1`
+export const Title = styled.h3`
   font-family: var(--ff-secondary);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  
+  @media screen and (max-width: 768px) {
+       font-size: 1rem;
+    }
 `;
 
 export const Subtitle = styled.p`
   font-family: var(--ff-secondary);
   font-size: 1rem;
   padding: 1px;
+
+  @media screen and (max-width: 768px) {
+       font-size: 12px
+    }
 `;

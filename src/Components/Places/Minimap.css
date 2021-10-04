@@ -1,32 +1,32 @@
 /* Mini Map component */
 .map__section {
-    background: var(--clr-dark);
-    padding: .5rem;
-    display: flex;
+  background: var(--clr-dark);
+  padding: .5rem 0;
+  display: flex;
 
-  }
+}
   
-  .marker_btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.marker_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
   
-  .img_logo {
-    height: 15px;
-    color: var(--clr-dark);    
-  }
+.img_logo {
+  height: 15px;
+  color: var(--clr-dark);    
+}
   
-  .pop_up {
-    display: flexbox;
-    flex-direction: column;
-    width: 100%;
-    height: 10px;
-  }
+.pop_up {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10px;
+}
 
-  .pop_up h2 {
-    font-family: var(--ff-secondary);
-    color: var(--clr-dark);
-    font-size: 10px;
-  }
-  
+.pop_up h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-dark);
+  font-size: 10px;
+}
+

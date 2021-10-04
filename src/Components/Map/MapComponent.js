@@ -8,12 +8,11 @@ import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
 ReactMapGL.workerClass = MapboxWorker;
 
 export const MapComponent = () => {
-
     const [viewport, setViewport] = useState({
         latitude: -37.68279137620957, 
         longitude: 176.1660871874423,
-        width: "1000vw",
-        height: "50vh",
+        width: "100%",
+        height: "100%",
         zoom: 11
     });
     const [seletedShop, setSelectedShop] = useState(null);
@@ -25,7 +24,7 @@ export const MapComponent = () => {
           setShops(snapshot.docs.map((doc) => ({ ...doc.data() })))
           ),
         []
-      );
+    );
 
     useEffect(() => {
         const listener = e => {
@@ -42,8 +41,10 @@ export const MapComponent = () => {
 
     return (
         <div className="map__section">
-            <ReactMapGL {...viewport} 
+        <ReactMapGL {...viewport}
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+            width= "1000vw"
+            height= "50vh"
             mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
             onViewportChange={viewport => {
                 setViewport(viewport);
@@ -75,8 +76,7 @@ export const MapComponent = () => {
                         }}
                     >
                         <div className="pop_up">
-                            <h2>{seletedShop.name}</h2>
-                            <p>{seletedShop.des}</p>
+                            <h3>{seletedShop.name}</h3>
                         </div>
                     </Popup>
                 ):null}    

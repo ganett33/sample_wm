@@ -18,16 +18,18 @@ import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import logo from "../../images/logo.svg"
 import "./Minimap.css";
 import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
-
 ReactMapGL.workerClass = MapboxWorker;
 
-const PostPlaces = ({ shops, loading }) => {
-    const [clicked, setClicked] = useState(false);
-    const [viewport, setViewport] = useState({});
+const PostPlaces = ({ shops }) => {
+    const [clicked, setClicked] = useState(true);
+    const [viewport, setViewport] = useState({
+      height: "100%",
+      width: "100%"
+    });
     const [seletedShop, setSelectedShop] = useState(null);
+    
     const toggle = index => {
         if (clicked === index) {
-          //if clicked question is already active, then close it
           return setClicked(null);
         }
         setClicked(index);
@@ -50,6 +52,7 @@ const PostPlaces = ({ shops, loading }) => {
                 </Wrap>
                 {clicked === index ? (
                   <Dropdown>
+                    <ContenetImage></ContenetImage>
                     <DropdownContent>
                     <Subtitle>Review: </Subtitle>
                     <Subtitle>{shop.review}</Subtitle>
@@ -65,23 +68,22 @@ const PostPlaces = ({ shops, loading }) => {
                       <Subtitle>{shop.hours}</Subtitle>
                       <Subtitle>Description: </Subtitle>
                       <Subtitle>{shop.des}</Subtitle>
-                      <ContenetImage>
-                      </ContenetImage>
+                    </DropdownContent>
                     <ContentBottom>
-                    <div className="map__section">
-            <ReactMapGL {...viewport} 
-            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-            mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
-            onViewportChange={viewport => {
-                setViewport({
-                  latitude: shop.geo.latitude, 
-                  longitude: shop.geo.longitude,
-                  width: "400px",
-                  height: "20vh",
-                  zoom: 16
-              });
-                }}
-            >
+                      <div className="map__section">
+                      <ReactMapGL {...viewport}
+                      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+                      mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
+                      height="200px"
+                      width="500px"
+                      onViewportChange={viewport => {
+                          setViewport({
+                            latitude: shop.geo.latitude, 
+                            longitude: shop.geo.longitude,
+                            zoom: 15
+                        });
+                          }}
+                      >
                     <Marker 
                         key={shop.id}
                         latitude={shop.geo.latitude}
@@ -106,14 +108,13 @@ const PostPlaces = ({ shops, loading }) => {
                         }}
                     >
                         <div className="pop_up">
-                            <h2>{seletedShop.name}</h2>
+                            <h3>{seletedShop.name}</h3>
                         </div>
                     </Popup>
-                ):null}    
-             </ReactMapGL>
-        </div>
+                      ):null}    
+                    </ReactMapGL>
+                      </div>
                     </ContentBottom>
-                    </DropdownContent>
                   </Dropdown>
                 ) : null}
 

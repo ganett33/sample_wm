@@ -1,38 +1,27 @@
-  .map__section {
-    background: var(--clr-dark);
-    padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .marker_btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .img_logo {
-    height: 20px;
-    color: var(--clr-dark);    
-  }
-  
-  .pop_up {
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    width: 150px;
-  }
+.map__section {
+  background: var(--clr-dark);
+  padding: .5rem;
+  display: flex;
+}
 
-  .pop_up h2 {
-    font-family: var(--ff-secondary);
-    color: var(--clr-dark);
-    font-size: .7rem;
-  }
-  
+.marker_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  .pop_up p {
-    font-family: var(--ff-secondary);
-    color: var(--clr-dark);
-    font-size: .7rem;
-  }
+.img_logo {
+  height: 20px;
+  color: var(--clr-dark);    
+}
+
+.pop_up {
+  display: flex;
+  flex-direction: column;
+}
+.pop_up h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-dark);
+  font-size: 1rem;
+}
+  
