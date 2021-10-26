@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 
 export const ImageSection = styled.section`
-    background-color: black;
-    padding: .5rem;
     font-family: var(--ff-secondary);
     height: 60vh;
     max-height: 1000px;
@@ -77,7 +75,7 @@ export const ImageContent = styled.div`
     color: #fff;
 
     h1 {
-        font-size: clamp(1rem, 6vw, 2.2rem);
+        font-size: clamp(1rem, 8vw, 2rem);
         font-weight: 400px;
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
@@ -87,7 +85,6 @@ export const ImageContent = styled.div`
 
     p{
         margin-bottom: 1.2rem;
-        font-size: clamp(1rem, 6vw, 1.5rem);
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     }
 
@@ -108,7 +105,7 @@ export const Button= styled(Link)`
     align-items: center;
     padding: ${({big}) => (big ? '16px 40px' : '14px')};
     color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
-    font-size: ${({big}) => (big ? '20px' : '15px')};
+    font-size: ${({big}) => (big ? '20px' : '14px')};
 
     &:hover {
         transform: translateY(-2px);
@@ -138,7 +135,7 @@ export const arrowsButtons = css`
     transition:0.3s;
 
     &:hover {
-        background: var(--clr-accent);
+        background: #cd853f;
         transform: sclae(1.05);
     }
 `;

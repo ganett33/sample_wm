@@ -153,11 +153,12 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
+  font-family: var(--ff-titles); 
   color: var(--clr-accent);
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   margin-bottom: 16px;

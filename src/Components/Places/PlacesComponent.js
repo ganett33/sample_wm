@@ -6,11 +6,15 @@ export const AccordionSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 82vh;
   background: #ffffff;
 
+  @media screen and (max-width: 1000px) {
+    min-height: 100vh;
+  };
+
   @media screen and (max-width: 500px) {
-    min-height: 90vh;
+    min-height: 100vh;
   };
 `;
 
@@ -27,7 +31,7 @@ export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1px;
+  padding: 2px;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -87,9 +91,6 @@ export const ContentTop = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ContenetImage = styled.image`
-  display: flex;
-`;
 
 export const ContentBottom = styled.div`
   display: flex;
@@ -98,20 +99,26 @@ export const ContentBottom = styled.div`
 
 export const Title = styled.h3`
   font-family: var(--ff-secondary);
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
+  margin: -3px 0;
   
   @media screen and (max-width: 768px) {
+       font-size: 1.3rem;
+    }
+    @media screen and (max-width: 500px) {
        font-size: 1rem;
     }
 `;
 
 export const Subtitle = styled.p`
   font-family: var(--ff-secondary);
-  font-size: 1rem;
-  padding: 1px;
+  font-size: 15px;
 
   @media screen and (max-width: 768px) {
-       font-size: 12px
+       font-size: 13px;
+    }
+    @media screen and (max-width: 500px) {
+       font-size: 11px;
     }
 `;

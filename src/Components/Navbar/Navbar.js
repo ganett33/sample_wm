@@ -46,9 +46,6 @@ const Navbar = ({ toggle }) => {
                         <NavLink1 onClick={toggleHome} to='/'>Home</NavLink1>
                     </NavItem>
                     <NavItem>
-                        <NavLink1 onClick={toggleHome} to='/places'>Places</NavLink1>
-                    </NavItem>
-                    <NavItem>
                         <NavLink1 onClick={toggleHome} to='/about'>About Us</NavLink1>
                     </NavItem>
                     <NavItem>

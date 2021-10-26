@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
-import { Link as LinkRouter } from 'react-router-dom';
+import {Link as LinkScroll } from 'react-scroll';
 import '../components.css'
 
 export const HeroBox = styled.div`
@@ -112,7 +112,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
 `;
 
-export const HeroBtn = styled(LinkRouter)`
+export const HeroBtn = styled(LinkScroll)`
 font-family: var(--ff-primary);
 border-radius: 20px;
 background: var(--clr-light);

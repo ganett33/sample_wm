@@ -4,7 +4,6 @@ import { onSnapshot, collection } from "firebase/firestore";
 import Pagination from './Pagination';
 import PostPlaces from './PostPlaces';
 
-
 const PlacesContent = () => {
   const [shops, setShops] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
