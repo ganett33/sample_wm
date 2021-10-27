@@ -37,11 +37,10 @@ export const Icon = styled.div`
 `;
 
 export const IconContent = styled(Link)`
-    font-family: var(--ff-titles);
+    font-family: var(--ff-logo-2);
     text-decoration: none;
     color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    font-size: 40px;
+    font-size: 4.5rem;
 
     @media screen and (max-width: 400px) {
         margin-left: 16px 8px 16px 8px;

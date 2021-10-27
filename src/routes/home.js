@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection/HeroSection';
-import Reviews from '../components/Reviews/Reviews';
-import { SliderData } from '../components/ImageSlider/SliderData';
-import ImageSlider from '../components/ImageSlider/ImageSlider';
-import MapComponent from '../components/Map/MapComponent';
+import HeroSection from '../Components/HeroSection/HeroSection';
+import Reviews from '../Components/Reviews/Reviews';
+import { SliderData } from '../Components/ImageSlider/SliderData';
+import ImageSlider from '../Components/ImageSlider/ImageSlider';
+import MapComponent from '../Components/Map/MapComponent';
 
 const Home = () => {
 

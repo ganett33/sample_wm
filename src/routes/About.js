@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutSection  from '../components/About/AboutSection';
+import AboutSection  from '../Components/About/AboutSection';
 
 
 function About() {

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 :root {
     --ff-primary: 'Nunito', sans-serif;
@@ -10,6 +10,9 @@
     --ff-italic: 'Sansita', sans-serif;
     --ff-bilbo: 'Bilbo Swash Caps', cursive;
     --ff-titles: 'Bebas Neue', cursive;
+
+    --ff-logo-2: 'Modak', cursive;
+
 
     --fw-reg: 300;
     --fw-bold: 900;

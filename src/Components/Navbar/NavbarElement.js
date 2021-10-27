@@ -33,15 +33,14 @@ export const NavbarBox = styled.div`
 `;
  
 export const NavLogo = styled(LinkRouter)`
-    font-family: var(--ff-titles);
+    font-family: var(--ff-logo-2);
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
     text-decoration: none;
     
     &:hover {
