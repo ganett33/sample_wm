@@ -3,15 +3,16 @@ import '../components.css'
 
 export const ReviewsBox = styled.div`
     font-family:var(--ff-secondary);
-    height: 650px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--clr-dark);
+    background: #010606;
+    padding: 30px 0;
 
-    @media screen and (max-width: 1300px) {
-        height: 1100px;
+    @media screen and (max-width: 1000px) {
+        height: 1200px;
     }
     
     @media screen and (max-width: 820px) {
@@ -26,13 +27,8 @@ export const ReviewsWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 25px;
-    padding: 0 20px;
-
-    @media screen and (max-width: 1300px) {
-        grid-template-columns: 1fr 1fr;
-    }    
-
-    @media screen and (max-width: 820px) {
+    padding: 0 5px;
+    @media screen and (max-width: 1200px) {
         grid-template-columns: 1fr ;
     }
 `;
@@ -57,17 +53,20 @@ export const ReviewsCard = styled.div`
 `;
 
 export const ReviewsIcon = styled.img`
-    height: 200px;
-    width: 280px;
-    margin-bottom: 10px;
+float: left;
+width:  300px;
+height: 300px;
+object-fit: cover;
+    border-style: solid;
+  border-width: 3px;
 `;
 
 
 export const ReviewH1 = styled.h1`
-    font-family:var(--ff-primary);
-    font-size: 2.5rem;
+    font-family:var(--ff-titles);
+    font-size: 2.7rem;
     color: #fff;
-    margin-bottom: 64px;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
@@ -77,8 +76,8 @@ export const ReviewH1 = styled.h1`
 
 export const ReviewH2 = styled.h2`
 color: var(--clr-font1);
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 7px;
 
 `;
 

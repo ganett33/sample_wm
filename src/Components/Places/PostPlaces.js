@@ -8,7 +8,6 @@ import {
   TopContent,
   TopContent1,
   DropdownContent,
-  ContenetImage,
   ContentBottom,
   Title,
   Subtitle
@@ -42,7 +41,7 @@ const PostPlaces = ({ shops }) => {
           {shops.map((shop, index) => {
             return (
               <>
-                <Wrap onClick={() => toggle(index)} key={index}>
+                <Wrap onClick={() => toggle(index)} key={shop.id}>
                   <TopContent>
                       <TopContent1>
                         <Title>{shop.name}</Title>
@@ -51,8 +50,7 @@ const PostPlaces = ({ shops }) => {
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
-                  <Dropdown>
-                    <ContenetImage></ContenetImage>
+                  <Dropdown >
                     <DropdownContent>
                     <Subtitle>Review: </Subtitle>
                     <Subtitle>{shop.review}</Subtitle>
@@ -70,17 +68,20 @@ const PostPlaces = ({ shops }) => {
                       <Subtitle>{shop.des}</Subtitle>
                     </DropdownContent>
                     <ContentBottom>
-                      <div className="map__section">
-                      <ReactMapGL {...viewport}
+                      <div className="map__section" >
+                      <a href={shop.link} target='_blank'>
+                        <ReactMapGL {...viewport}
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                       mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
                       height="200px"
-                      width="500px"
+                      width="350px"
+                      
                       onViewportChange={viewport => {
                           setViewport({
                             latitude: shop.geo.latitude, 
                             longitude: shop.geo.longitude,
                             zoom: 15
+                            
                         });
                           }}
                       >
@@ -113,6 +114,7 @@ const PostPlaces = ({ shops }) => {
                     </Popup>
                       ):null}    
                     </ReactMapGL>
+                    </a>
                       </div>
                     </ContentBottom>
                   </Dropdown>

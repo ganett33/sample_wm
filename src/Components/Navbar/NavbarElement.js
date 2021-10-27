@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import {Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background:${({scrollNav}) => (scrollNav ? 'var(--clr-dark)' : '#1112')};
+    background:${({scrollNav}) => (scrollNav ? '#000' : '#1112')};
     font-family: var(--ff-primary);
     height: 80px;
     margin-top: -80px;
@@ -33,11 +33,11 @@ export const NavbarBox = styled.div`
 `;
  
 export const NavLogo = styled(LinkRouter)`
-    font-weight: var(--fw-bold);
+    font-family: var(--ff-titles);
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -45,7 +45,7 @@ export const NavLogo = styled(LinkRouter)`
     text-decoration: none;
     
     &:hover {
-        transform: rotate(8deg);
+        transform: rotate(7.5deg);
         color: var(--clr-accent);
     }
 `;
@@ -67,9 +67,6 @@ export const MobileIcon = styled(FaBars)`
             transition: all 0.2s ease-in-out;
             color: var(--clr-accent);
         }
-    }
-    @media screen and (max-width: 400px) {
-        font-size: 1rem;
     }
 `;
 
@@ -100,7 +97,7 @@ export const NavItem = styled.li`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: var(--clr-accent);
+        color: #f73859;
     }
 `;
 
@@ -119,7 +116,7 @@ export const NavLink1 = styled(LinkRouter)`
         color: #f73859;
     }
     &.active {
-        border-bottom: 1px solid #000;
+        border-bottom: 3px solid #000;
     }
 `;
 

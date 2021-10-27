@@ -26,7 +26,7 @@ export const AboutLogo = styled.span`
     background-color: black;
     padding: 5px 10px;
     position: absolute;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-titles);
     color: white;
     font-size: 4.5rem;
     

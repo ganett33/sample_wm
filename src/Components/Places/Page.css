@@ -10,7 +10,7 @@
 .page-item {
     font-family: var(--ff-secondary);
     list-style: none;
-    margin: 5px;
+    margin: 20px 10px;
 }
 
 .page-link {

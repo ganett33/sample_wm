@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from '../components/Navbar/Navbar';
-import Sidebar from '../components/Sidebar/Sidebar'; 
-import Home from "../routes/Home";
-import Places from "../routes/Places";
-import Signin from "../routes/Signin";
+import Navbar from '../Components/Navbar/Navbar';
+import Sidebar from '../Components/Sidebar/Sidebar'; 
+import Home from "../routes/home";
+import Signin from "../routes/signin";
 import About from '../routes/About';
 import Footer from './Footer/Footer';
 
@@ -26,7 +25,6 @@ const AppRouter = ({ isLoggedIn }) => {
               <Home />
             </Route>
             <Route path='/about' exact component={About} />
-            <Route path='/places' component={Places} />
             <Footer />
           </>
         ) : (

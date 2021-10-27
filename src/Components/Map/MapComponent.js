@@ -15,8 +15,8 @@ export const MapComponent = () => {
         height: "100%",
         zoom: 11
     });
-    const [seletedShop, setSelectedShop] = useState(null);
     const [shops, setShops] = useState([]);
+    const [seletedShop, setSelectedShop] = useState(null);
 
     useEffect(
         () =>

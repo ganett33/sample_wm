@@ -1,43 +1,38 @@
 export const SliderData = [
     { 
-        title: 'The Chilli House',
-        location: 'Hamilton',
-        path: '/places/1',
+        title: 'Le Chat Noir',
+        location: 'Greerton',
         category: 'New Place',
-        image: 'https://neatplaces.co.nz/media/thumbs/uploads/places/place/the_chilli_house/Customers_sat_at_a_table_in_dining_area.jpg.650x425_q80_crop-smart_upscale.jpg',
+        image: 'https://10619-2.s.cdn12.com/rests/original/801_502833407.jpg',
         alt: 'The Chilli House'
     },
     { 
-        title: 'The Chilli House',
-        location: 'Hamilton',
-        path: '/places/1',
+        title: 'Henry & Ted',
+        location: 'Papamoa',
         category: 'New Place',
-        image: 'https://neatplaces.co.nz/media/thumbs/uploads/places/place/the_chilli_house/Art_mural_of_a_face_and_customers_dining_at_a_table.jpg.650x425_q80_crop-smart_upscale.jpg',
-        alt: 'The Chilli House'
+        image: 'https://www.cintesi.co.nz/content/projects/0952626001509575708.jpg?width=904&height=603&fit=bounds',
+        alt: 'Henry & Ted'
     },
     { 
-        title: 'The Chilli House',
-        location: 'Hamilton',
-        path: '/places/1',
+        title: 'Blackberry Eatery',
+        location: 'Papamoa',
         category: 'New Place',
-        image: 'https://neatplaces.co.nz/media/thumbs/uploads/places/place/the_chilli_house/Asian_soup.jpg.650x425_q80_crop-smart_upscale.jpg',
-        alt: 'The Chilli House'
+        image: 'https://i.pinimg.com/originals/d4/6d/31/d46d31b1768876734df398e25588ab09.jpg',
+        alt: 'Blackberry Eatery'
     },    
     { 
-        title: 'The Chilli House',
-        location: 'Hamilton',
-        path: '/places/1',
+        title: 'The Rising Tide',
+        location: 'Mount Maunganui',
         category: 'New Place',
-        image: 'https://neatplaces.co.nz/media/thumbs/uploads/places/place/the_chilli_house/Chinese_lanterns_on_the_ceiling.jpg.650x425_q80_crop-smart_upscale.jpg',
-        alt: 'The Chilli House'
+        image: 'https://s3.ap-southeast-2.amazonaws.com/newzealand.travlr.com/uploads/images/venue/0df41f63f9faa6f7e1ca7386f4dcf48b.jpg?v=1',
+        alt: 'The Rising Tide'
     },
     { 
-        title: 'The Chilli House',
-        location: 'Hamilton',
-        path: '/places/1',
+        title: 'Mamma Mia',
+        location: 'Mount Maunganui',
         category: 'New Place',
-        image: 'https://neatplaces.co.nz/media/thumbs/uploads/places/place/the_chilli_house/Chilli_House_Exterior.jpg.650x425_q80_crop-smart_upscale.jpg',
-        alt: 'The Chilli House'
+        image: 'https://image05.firsttable.net/1170x655/public/restaurant/e2e806f431/615136_10152300059265835_8029370647291411455_o.jpg',
+        alt: 'Mamma Mia'
     },
 
 ];

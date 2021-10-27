@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Video from '../../videos/video.mp4';
+import { animateScroll as scroll} from 'react-scroll';
 import { 
     HeroBox, 
     HeroBg, 
@@ -20,6 +21,7 @@ export const HeroSection = () => {
     const onHover = () => {
         setHover(!hover)
     }
+    const toggle = () => {scroll.scrollTo(1500);}
 
     return (
         <HeroBox >
@@ -32,8 +34,8 @@ export const HeroSection = () => {
                     Hidden places in Mt. Maunganui this week.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <HeroBtn  
-                    to='/places'
+                    <HeroBtn
+                    onClick={toggle}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
