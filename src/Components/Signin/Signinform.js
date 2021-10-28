@@ -93,7 +93,7 @@ const Signinform = () => {
                         <Text1>Forgot password</Text1>
                         <Text2>{error}</Text2>
                         <FormH4 onClick={toggleAccount}>
-                          {newAccount ? "Sign In" : "Create Account"}
+                          {newAccount ? "Sign In 🔄" : "Create Account 🔄"}
                         </FormH4>
                         <FormInputBtn type="submit" value={newAccount ? "Create Account" : "Sign In"} />
                         <br />

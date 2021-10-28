@@ -23,10 +23,10 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutLogo = styled.span`
-    background-color: black;
     padding: 5px 10px;
     position: absolute;
-    font-family: var(--ff-titles);
+    font-family: var(--ff-primary);
+    -webkit-text-stroke: 3px black;
     color: white;
     font-size: 4.5rem;
     

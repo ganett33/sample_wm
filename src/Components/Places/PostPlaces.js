@@ -69,7 +69,7 @@ const PostPlaces = ({ shops }) => {
                     </DropdownContent>
                     <ContentBottom>
                       <div className="map__section" >
-                      <a href={shop.link} target='_blank'>
+                      <a href={shop.link} target='blank'>
                         <ReactMapGL {...viewport}
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                       mapStyle="mapbox://styles/ganett33/cktbdv4jj7lec18parfyx30u8"
@@ -80,8 +80,7 @@ const PostPlaces = ({ shops }) => {
                           setViewport({
                             latitude: shop.geo.latitude, 
                             longitude: shop.geo.longitude,
-                            zoom: 15
-                            
+                            zoom: 16                            
                         });
                           }}
                       >

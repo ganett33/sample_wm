@@ -18,9 +18,9 @@
   
 .pop_up {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 15px;
+  height: 10px;
+  justify-content: center;
 }
 
 .pop_up h3 {
@@ -29,10 +29,5 @@
   font-size: 10px;
 }
 
-.pop_up a {
-  font-family: var(--ff-secondary);
-  color: var(--clr-dark);
-  font-size: 10px;
-  text-decoration: none;
-}
+
 

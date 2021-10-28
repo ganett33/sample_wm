@@ -5,7 +5,6 @@ import {
     ImageSlide,
     ImageSlider,
     ImagePic,
-    Button,
     SliderButtons,
     ImageContent,
     PrevArrow,
@@ -66,10 +65,6 @@ const NewPlace = ({ slides }) => {
                             <ImageContent>
                                 <h1>{slide.title}</h1>
                                 <p>{slide.location}</p>
-                                <Button to={slide.path} primary="true"
-                                css={`max-width: 160px;`}>
-                                    {slide.category}
-                                </Button>
                             </ImageContent>
                         </ImageSlider>
                          )}

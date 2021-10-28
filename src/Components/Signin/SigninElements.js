@@ -10,7 +10,7 @@ export const Box = styled.div`
     right: 0;
     top: 0;
     z-index: 0;
-    overflow: hidden;
+    overflow: scroll;
     background: var(--clr-font2);
 `;
 
@@ -20,8 +20,12 @@ export const FormWrap = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
         height: 80%;
+    }
+
+    @media screen and (max-width: 350px) {
+        height: 70%;
     }
 `;
 
@@ -38,13 +42,22 @@ export const Icon = styled.div`
 
 export const IconContent = styled(Link)`
     font-family: var(--ff-logo-2);
+    -webkit-text-stroke: 2px black;
     text-decoration: none;
     color: var(--clr-accent);
-    font-size: 4.5rem;
+    font-size: 70px;
+    padding-top: 100px;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
+        font-size: 45px;
+        margin-left: 10px 4px 10px 4px;
+        marign-top: 110px;
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: 35px;
         margin-left: 16px 8px 16px 8px;
-        marign-top: 8px;
+        marign-top: 120px;
     }
 `;
 

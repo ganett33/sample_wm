@@ -10,7 +10,6 @@ export const ReviewsBox = styled.div`
     align-items: center;
     background: #010606;
     padding: 30px 0;
-
     @media screen and (max-width: 1000px) {
         height: 1200px;
     }
@@ -44,7 +43,6 @@ export const ReviewsCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -63,14 +61,12 @@ object-fit: cover;
 
 
 export const ReviewH1 = styled.h1`
-    font-family:var(--ff-primary);
-    font-size: 2.5rem;
+    font-family:var(--ff-titles);
+    font-size: 2.7rem;
     color: #fff;
     margin-bottom: 20px;
-
     @media screen and (max-width: 480px) {
         font-size: 2rem;
-
     }
 `;
 
@@ -78,7 +74,6 @@ export const ReviewH2 = styled.h2`
 color: var(--clr-font1);
     font-size: 1.1rem;
     margin-bottom: 7px;
-
 `;
 
 export const ReviewP = styled.p`

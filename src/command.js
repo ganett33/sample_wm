@@ -1,4 +1,4 @@
-import { dbService } from '../../fbase';
+import { dbService } from './fbase';
 
 const getAll = async (req, res) => {
     dbService.collection('shops').get()
@@ -18,9 +18,6 @@ const getById = async (req, res) => {
     const userData = await dbService.firesotre('shops').doc(req.params.id).get()
     res.json(userData.data());
 }
-
-
-
 
 
 

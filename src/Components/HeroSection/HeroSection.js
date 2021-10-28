@@ -34,8 +34,8 @@ export const HeroSection = () => {
                     Hidden places in Mt. Maunganui this week.
                 </HeroP>
                 <HeroBtnWrapper>
-                    <HeroBtn
-                    onClick={toggle}
+                    <HeroBtn  
+                     onClick={toggle}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"

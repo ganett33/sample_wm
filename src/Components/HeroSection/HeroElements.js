@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
-import {Link as LinkScroll } from 'react-scroll';
+import { Link as LinkScroll  } from 'react-scroll';
 import '../components.css'
 
 export const HeroBox = styled.div`

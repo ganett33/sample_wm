@@ -75,7 +75,7 @@ export const ImageContent = styled.div`
     color: #fff;
 
     h1 {
-        font-size: clamp(1rem, 8vw, 2rem);
+        font-size: clamp(1rem, 8vw, 2.2rem);
         font-weight: 400px;
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
@@ -87,30 +87,6 @@ export const ImageContent = styled.div`
         margin-bottom: 1.2rem;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     }
-
-`;
-
-export const Button= styled(Link)`
-    background: ${({primary}) => (primary ? '#000d1a' : '#CD853F')};
-    white-space: nowrap;
-    outline: none;
-    border: none;
-    min-width: 100px;
-    max-width: 200px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: ${({big}) => (big ? '16px 40px' : '14px')};
-    color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
-    font-size: ${({big}) => (big ? '20px' : '14px')};
-
-    &:hover {
-        transform: translateY(-2px);
-    }
-
 
 `;
 
@@ -136,7 +112,7 @@ export const arrowsButtons = css`
 
     &:hover {
         background: #cd853f;
-        transform: sclae(1.05);
+        transform: scale(1.05);
     }
 `;
 

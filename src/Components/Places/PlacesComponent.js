@@ -8,11 +8,9 @@ export const AccordionSection = styled.div`
   justify-content: center;
   min-height: 82vh;
   background: #ffffff;
-
   @media screen and (max-width: 1000px) {
     min-height: 100vh;
   };
-
   @media screen and (max-width: 500px) {
     min-height: 100vh;
   };
@@ -36,7 +34,6 @@ export const Wrap = styled.div`
   text-align: center;
   cursor: pointer;
   border: 2px solid #f73859;
-
   h1 {
     padding: 2rem;
     font-size: 2rem;
@@ -51,8 +48,6 @@ export const TopContent = styled.div`
   display: grid;
   align-items: center;
   text-align: center;
-
-
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
@@ -65,7 +60,6 @@ export const TopContent1 = styled.div`
     display: flex;
     justify-self: flex-start;
     padding: 10px; 
-
 `;
 
 export const Dropdown = styled.div`
@@ -114,7 +108,6 @@ export const Title = styled.h3`
 export const Subtitle = styled.p`
   font-family: var(--ff-secondary);
   font-size: 15px;
-
   @media screen and (max-width: 768px) {
        font-size: 13px;
     }
