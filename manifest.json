@@ -1,0 +1,40 @@
+{
+  "name": "Word A'Mouth",
+  "short_name": "WAM",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "https://ganett33.github.io/sample_wm/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/WAM10.png",
+      "type": "image/png",
+      "sizes": "10 x 10"
+    },
+    {
+      "src": "/images/WAM50.png",
+      "type": "image/png",
+      "sizes": "50 x 50"
+    },
+    {
+      "src": "/images/WAM100.png",
+      "type": "image/png",
+      "sizes": "100 x 100"
+    },
+    {
+      "src": "/images/WAM250.png",
+      "type": "image/png",
+      "sizes": "250 x 2500"
+    },
+    {
+      "src": "/images/WAM500.png",
+      "type": "image/png",
+      "sizes": "500 x 500"
+    },
+    {
+      "src": "/images/WAM1k.png",
+      "type": "image/png",
+      "sizes": "1000 x 1000"
+    }
+  ]
+}
