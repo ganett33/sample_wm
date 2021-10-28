@@ -38,6 +38,7 @@ export const Icon = styled.div`
 
 export const IconContent = styled(Link)`
     font-family: var(--ff-logo-2);
+    -webkit-text-stroke: 2.5px black;
     text-decoration: none;
     color: var(--clr-accent);
     font-size: 4.5rem;
