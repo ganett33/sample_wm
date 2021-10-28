@@ -2,45 +2,52 @@
   "name": "Word A'Mouth",
   "short_name": "WAM",
   "display": "standalone",
-  "description": "Don't miss fabulous local shops in Tauranga", 
+  "description": "Don't miss fabulous local shops in Tauranga",
   "orientation": "any",
   "start_url": "https://ganett33.github.io/sample_wm/",
   "language": "English",
+  "theme_color": "#f73859",
+  "background_color": "#b2b2b8",
   "icons": [
     {
       "src": "/images/maskable_icon_x48.png",
       "type": "image/png",
-      "sizes": "48 x 48"
+      "sizes": "48x48"
     },
     {
       "src": "/images/maskable_icon_x72.png",
       "type": "image/png",
-      "sizes": "72 x 72"
+      "sizes": "72x72"
     },
     {
       "src": "/images/maskable_icon_x96.png",
       "type": "image/png",
-      "sizes": "96 x 96"
+      "sizes": "96x96"
     },
     {
       "src": "/images/maskable_icon_x128.png",
       "type": "image/png",
-      "sizes": "128 x 128"
+      "sizes": "128x128"
     },
     {
       "src": "/images/maskable_icon_x192.png",
       "type": "image/png",
-      "sizes": "192 x 192"
+      "sizes": "192x192"
     },
     {
       "src": "/images/maskable_icon_x384.png",
       "type": "image/png",
-      "sizes": "384 x 384"
+      "sizes": "384x384"
     },
     {
       "src": "/images/maskable_icon_x512.png",
       "type": "image/png",
-      "sizes": "512 x 512"
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/maskable_icon_x1111.png",
+      "type": "image/png",
+      "sizes": "1111x1111"
     }
   ]
 }
