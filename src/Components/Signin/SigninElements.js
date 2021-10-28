@@ -47,17 +47,17 @@ export const IconContent = styled(Link)`
     color: var(--clr-accent);
     font-size: 70px;
     padding-top: 100px;
+    z-index: 10;
 
     @media screen and (max-width: 900px) {
         font-size: 45px;
         margin-left: 10px 4px 10px 4px;
-        marign-top: 110px;
+        marign-top: 100px;
     }
 
     @media screen and (max-width: 350px) {
         font-size: 35px;
         margin-left: 16px 8px 16px 8px;
-        marign-top: 120px;
     }
 `;
 
@@ -85,7 +85,7 @@ export const Form = styled.form`
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0, 0.9);
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
         padding: 32px 32px;
      }
 `;
