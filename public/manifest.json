@@ -24,12 +24,12 @@
     {
       "src": "/images/WAM250.png",
       "type": "image/png",
-      "sizes": "250 x 2500"
+      "sizes": "256 x 256"
     },
     {
       "src": "/images/WAM500.png",
       "type": "image/png",
-      "sizes": "500 x 500"
+      "sizes": "512 x 512"
     },
     {
       "src": "/images/WAM1k.png",
