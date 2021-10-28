@@ -63,8 +63,8 @@ object-fit: cover;
 
 
 export const ReviewH1 = styled.h1`
-    font-family:var(--ff-titles);
-    font-size: 2.7rem;
+    font-family:var(--ff-primary);
+    font-size: 2.5rem;
     color: #fff;
     margin-bottom: 20px;
 
