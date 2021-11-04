@@ -5,10 +5,10 @@
 
 https://user-images.githubusercontent.com/65261313/140292955-6dae79a7-499e-407d-aabd-afd2b093f989.mp4
 
->### Problem: 
+> ### Problem: 
   Have you ever wanted to try something new when going out to eat or drink? A place hidden away from view, tucked into side roads where you’d never expect?
 
->### Solution: 
+> ### Solution: 
   Word’a’Mouth is a website that solves that problem by displaying user curated review for places just out of sight.
 
 ## Main function 
@@ -23,6 +23,11 @@ https://user-images.githubusercontent.com/65261313/140292955-6dae79a7-499e-407d-
 Front End: Javascript, React, HTML, CSS
 
 Back End: Firebase, gh-pages
+
+### Team member:
+  - Albert Jovner
+  - Jongbo Lee
+  - Vinicius Juliani Souza
 
 ## Kanban board
 <img width="616" alt="kanban" src="https://user-images.githubusercontent.com/65261313/140290949-522cbb05-3c7d-47fd-8e02-a3f1cb601d89.png">
