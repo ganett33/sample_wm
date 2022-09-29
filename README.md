@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/65261313/140292955-6dae79a7-499e-407d-
 ## Main function 
 - **Pagination:** Display 4 places on each page.
 - **Login:** Use Firebase Authentication API, also it can login with Google and GitHub account 
-- **Map:** Use google map
+- **Mapping:** Use mapbox
 - **Database:** Use Firestore Database
 - **PWA:** Use PWA builder, User can install most of device with chrome browser
 - **Deploy:** Use GitHub Pages 
