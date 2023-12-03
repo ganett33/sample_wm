@@ -16,11 +16,11 @@ https://user-images.githubusercontent.com/65261313/140292955-6dae79a7-499e-407d-
 - **Login:** Use Firebase Authentication API, also it can log in with Google and GitHub account 
 - **Mapping:** Use Mapbox
 - **Database:** Use Firestore Database
-- **PWA:** Use PWA builder, User can install most of devices with Chrome browser
+- **PWA:** Use PWA builder, User can install most devices with Chrome browser
 - **Deploy:** Use GitHub Pages 
 
 ## Tech stack
-Front End: ![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?logo=css3&logoColor=white)
+Front End: ![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?logo=styled-components&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?logo=css3&logoColor=white)
 
 Back End: ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?logo=firebase)
 
